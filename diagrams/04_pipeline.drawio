@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-12-14T00:00:00.000Z" agent="Python Script" version="21.0.0">
+  <diagram name="Page-1" id="page1">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="180" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="Prediction Pipeline" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="s1" value="Data&lt;br&gt;Collection" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;fontColor=white;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="20" y="60" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s2" value="Preprocess" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;fontColor=white;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="60" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s3" value="Feature&lt;br&gt;Extraction" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=none;fontColor=white;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="320" y="60" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s4" value="Model&lt;br&gt;Training" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=none;fontColor=white;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="60" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="s5" value="VRP&lt;br&gt;Prediction" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=none;fontColor=white;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="60" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="arr0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" edge="1" parent="1" source="s1" target="s2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" edge="1" parent="1" source="s2" target="s3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" edge="1" parent="1" source="s3" target="s4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="arr3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=2;strokeColor=#333333;" edge="1" parent="1" source="s4" target="s5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

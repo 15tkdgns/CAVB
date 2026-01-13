@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-12-14T00:00:00.000Z" agent="Python Script" version="21.0.0">
+  <diagram name="Page-1" id="page1">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="VRP = VIX - RV" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=20;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="250" y="10" width="300" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vix" value="VIX&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Implied Volatility&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=none;fontColor=white;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="80" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="minus" value="-" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=36;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="rv" value="RV&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Realized Volatility&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;fontColor=white;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="300" y="80" width="180" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="equals" value="=" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=36;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="490" y="100" width="40" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vrp" value="VRP&lt;br&gt;&lt;font style=&quot;font-size:11px&quot;&gt;Risk Premium&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=none;fontColor=white;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="80" width="180" height="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

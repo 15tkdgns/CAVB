@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2024-12-14T00:00:00.000Z" agent="Python Script" version="21.0.0">
+  <diagram name="Page-1" id="page1">
+    <mxGraphModel dx="1000" dy="600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="340" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" value="12 Features Classification" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=18;fontColor=#000000;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="10" width="400" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="cat1" value="Volatility" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=none;fontColor=white;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="50" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cat1_f0" value="RV_1d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="30" y="100" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat1_f1" value="RV_5d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="30" y="145" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat1_f2" value="RV_22d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e74c3c;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="30" y="190" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat2" value="VIX" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;fontColor=white;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="220" y="50" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cat2_f0" value="Vol_lag1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="100" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat2_f1" value="Vol_lag5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="145" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat2_f2" value="Vol_change" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#3498db;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="220" y="190" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat3" value="VRP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=none;fontColor=white;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="410" y="50" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cat3_f0" value="VRP_lag1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="410" y="100" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat3_f1" value="VRP_lag5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="410" y="145" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat3_f2" value="VRP_ma5" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2ecc71;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="410" y="190" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat4" value="Others" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=none;fontColor=white;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="600" y="50" width="150" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cat4_f0" value="regime" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="100" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat4_f1" value="ret_5d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="145" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="cat4_f2" value="ret_22d" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#9b59b6;strokeColor=none;fontColor=white;fontSize=10;fontStyle=1;fillOpacity=40;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="600" y="190" width="150" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="model" value="Model Input (12)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#2c3e50;strokeColor=none;fontColor=white;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="260" width="220" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,87 @@
+{
+  "description": "Advanced ML Pipeline: Feature Engineering + Stacking (5-day prediction)",
+  "methodology": {
+    "feature_engineering": "Interaction terms + Rolling features",
+    "scaling": "RobustScaler",
+    "models": "XGBoost + RandomForest + GradientBoosting → Ridge",
+    "cv": "TimeSeriesSplit (5 folds)"
+  },
+  "results": [
+    {
+      "asset": "GLD",
+      "asset_name": "Gold (금)",
+      "n_samples": 2480,
+      "n_features": 21,
+      "train_size": 1488,
+      "val_size": 491,
+      "test_size": 491,
+      "r2_baseline": 0.8592375942994646,
+      "r2_val": 0.797563379653604,
+      "r2_test": 0.8292008749605836,
+      "mae_test": 1.3266294500155904,
+      "improvement": -0.03003671933888097,
+      "improvement_pct": -3.4957408216489725
+    },
+    {
+      "asset": "EFA",
+      "asset_name": "EAFE (선진국)",
+      "n_samples": 2480,
+      "n_features": 21,
+      "train_size": 1488,
+      "val_size": 491,
+      "test_size": 491,
+      "r2_baseline": 0.7532232304888711,
+      "r2_val": 0.5168240994177449,
+      "r2_test": 0.5521417153690289,
+      "mae_test": 1.5863723454370626,
+      "improvement": -0.20108151511984218,
+      "improvement_pct": -26.69613827355437
+    },
+    {
+      "asset": "TLT",
+      "asset_name": "Treasury (국채)",
+      "n_samples": 2480,
+      "n_features": 21,
+      "train_size": 1488,
+      "val_size": 491,
+      "test_size": 491,
+      "r2_baseline": 0.7700958746479325,
+      "r2_val": 0.6400988529831346,
+      "r2_test": 0.5561100138301862,
+      "mae_test": 2.181600866326168,
+      "improvement": -0.2139858608177463,
+      "improvement_pct": -27.78691171609963
+    },
+    {
+      "asset": "SPY",
+      "asset_name": "S&P 500",
+      "n_samples": 2480,
+      "n_features": 21,
+      "train_size": 1488,
+      "val_size": 491,
+      "test_size": 491,
+      "r2_baseline": 0.7250668427699042,
+      "r2_val": 0.412532087596006,
+      "r2_test": 0.34740725016581786,
+      "mae_test": 1.6878991023437537,
+      "improvement": -0.3776595926040863,
+      "improvement_pct": -52.08617610499871
+    },
+    {
+      "asset": "EEM",
+      "asset_name": "Emerging (신흥국)",
+      "n_samples": 2480,
+      "n_features": 21,
+      "train_size": 1488,
+      "val_size": 491,
+      "test_size": 491,
+      "r2_baseline": 0.6740817313433956,
+      "r2_val": 0.11191956281494342,
+      "r2_test": 0.37985590389204715,
+      "mae_test": 2.020086114398922,
+      "improvement": -0.2942258274513484,
+      "improvement_pct": -43.64839065805535
+    }
+  ],
+  "timestamp": "2026-01-09T03:06:41.832142"
+}

@@ -1,0 +1,108 @@
+{
+  "bootstrap": {
+    "point_estimate": 0.13474366366188395,
+    "bootstrap_mean": 0.13112668576948158,
+    "bootstrap_std": 0.03441167093440002,
+    "ci_lower": 0.06770689540529355,
+    "ci_upper": 0.20028301327447465
+  },
+  "regime": {
+    "Low Vol (VIX<20)": {
+      "r2": 0.1331223422438741,
+      "n_samples": 250,
+      "direction_acc": 0.708
+    },
+    "Normal (20\u2264VIX<25)": {
+      "r2": -7.949701732047945,
+      "n_samples": 21,
+      "direction_acc": 0.9047619047619048
+    }
+  },
+  "yearly": {
+    "2024": {
+      "r2": 0.02510444635165321,
+      "n_samples": 132,
+      "direction_acc": 0.6893939393939394
+    },
+    "2025": {
+      "r2": 0.0899314638198353,
+      "n_samples": 143,
+      "direction_acc": 0.7342657342657343
+    }
+  },
+  "feature_importance": [
+    {
+      "feature": "VIX_lag1",
+      "coefficient": 5.767719000400806
+    },
+    {
+      "feature": "VIX_lag5",
+      "coefficient": 5.4731371433701
+    },
+    {
+      "feature": "RV_22d",
+      "coefficient": 4.251531338943663
+    },
+    {
+      "feature": "VRP_lag5",
+      "coefficient": 2.3587349929318147
+    },
+    {
+      "feature": "VRP_ma5",
+      "coefficient": 1.8815483757922058
+    },
+    {
+      "feature": "VIX_change",
+      "coefficient": 1.5094441610336593
+    },
+    {
+      "feature": "regime_high",
+      "coefficient": 1.2176145641351437
+    },
+    {
+      "feature": "RV_1d",
+      "coefficient": 0.996941000888543
+    },
+    {
+      "feature": "RV_5d",
+      "coefficient": 0.919642292642081
+    },
+    {
+      "feature": "VRP_lag1",
+      "coefficient": 0.6531051550362862
+    },
+    {
+      "feature": "return_5d",
+      "coefficient": 0.48143169874152114
+    },
+    {
+      "feature": "return_22d",
+      "coefficient": 0.44261432945647083
+    }
+  ],
+  "direction_metrics": {
+    "binary": {
+      "accuracy": 0.7127272727272728,
+      "precision": 0.7475247524752475,
+      "recall": 0.8435754189944135,
+      "f1": 0.7926509186351706
+    },
+    "tertile": {
+      "accuracy": 0.39636363636363636
+    }
+  },
+  "trading": {
+    "strategy": {
+      "n_trades": 202,
+      "total_return": 697.2651369432834,
+      "avg_return": 3.451807608630116,
+      "win_rate": 0.7772277227722773
+    },
+    "buy_hold": {
+      "total_return": 100.75028432335694,
+      "avg_return": 0.3663646702667525
+    },
+    "outperformance": 3.0854429383633635
+  },
+  "timestamp": "2025-12-12T23:36:48.314863"
+}

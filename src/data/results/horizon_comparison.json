@@ -1,0 +1,157 @@
+{
+  "description": "Comparison of 5-day vs 22-day volatility prediction",
+  "methodology": "3-Way Split (60/20/20), ElasticNet",
+  "results": [
+    {
+      "asset": "EFA",
+      "asset_name": "EAFE (선진국)",
+      "horizons": {
+        "5d": {
+          "horizon": "5d",
+          "gap_days": 5,
+          "train_size": 1480,
+          "val_size": 488,
+          "test_size": 489,
+          "r2_val": 0.7581020956195712,
+          "r2_test": 0.7323455732848704,
+          "r2_naive": 0.457054662962017,
+          "mae_test": 1.2370718624703705,
+          "improvement": 0.27529091032285335
+        },
+        "22d": {
+          "horizon": "22d",
+          "gap_days": 22,
+          "train_size": 1480,
+          "val_size": 471,
+          "test_size": 472,
+          "r2_val": -0.1418125506809731,
+          "r2_test": 0.17550201807433474,
+          "r2_naive": -0.18241176502769485,
+          "mae_test": 2.4625559356943687,
+          "improvement": 0.3579137831020296
+        }
+      }
+    },
+    {
+      "asset": "TLT",
+      "asset_name": "Treasury (국채)",
+      "horizons": {
+        "5d": {
+          "horizon": "5d",
+          "gap_days": 5,
+          "train_size": 1480,
+          "val_size": 488,
+          "test_size": 489,
+          "r2_val": 0.7840401733854433,
+          "r2_test": 0.7793101720167379,
+          "r2_naive": 0.6346043551241916,
+          "mae_test": 1.5349862122255962,
+          "improvement": 0.14470581689254636
+        },
+        "22d": {
+          "horizon": "22d",
+          "gap_days": 22,
+          "train_size": 1480,
+          "val_size": 471,
+          "test_size": 472,
+          "r2_val": -0.28629553149337417,
+          "r2_test": 0.08248826467575954,
+          "r2_naive": -0.006776337726396076,
+          "mae_test": 3.4800461600549752,
+          "improvement": 0.08926460240215561
+        }
+      }
+    },
+    {
+      "asset": "GLD",
+      "asset_name": "Gold (금)",
+      "horizons": {
+        "5d": {
+          "horizon": "5d",
+          "gap_days": 5,
+          "train_size": 1480,
+          "val_size": 488,
+          "test_size": 489,
+          "r2_val": 0.8510388394241774,
+          "r2_test": 0.853419293617697,
+          "r2_naive": 0.6942366155219,
+          "mae_test": 1.191625830890504,
+          "improvement": 0.159182678095797
+        },
+        "22d": {
+          "horizon": "22d",
+          "gap_days": 22,
+          "train_size": 1480,
+          "val_size": 471,
+          "test_size": 472,
+          "r2_val": 0.5962122323064506,
+          "r2_test": 0.31656242300388115,
+          "r2_naive": -0.007171241974124998,
+          "mae_test": 2.8838052606535767,
+          "improvement": 0.32373366497800615
+        }
+      }
+    },
+    {
+      "asset": "SPY",
+      "asset_name": "S&P 500",
+      "horizons": {
+        "5d": {
+          "horizon": "5d",
+          "gap_days": 5,
+          "train_size": 1480,
+          "val_size": 488,
+          "test_size": 489,
+          "r2_val": 0.7375811977124525,
+          "r2_test": 0.7328123241875897,
+          "r2_naive": 0.4079141137645772,
+          "mae_test": 1.0901223049191988,
+          "improvement": 0.3248982104230125
+        },
+        "22d": {
+          "horizon": "22d",
+          "gap_days": 22,
+          "train_size": 1480,
+          "val_size": 471,
+          "test_size": 472,
+          "r2_val": -0.14552136261454218,
+          "r2_test": -0.044715664292693136,
+          "r2_naive": -0.4939325225190656,
+          "mae_test": 2.701204166500258,
+          "improvement": 0.4492168582263725
+        }
+      }
+    },
+    {
+      "asset": "EEM",
+      "asset_name": "Emerging (신흥국)",
+      "horizons": {
+        "5d": {
+          "horizon": "5d",
+          "gap_days": 5,
+          "train_size": 1480,
+          "val_size": 488,
+          "test_size": 489,
+          "r2_val": 0.7136207198927194,
+          "r2_test": 0.6531044791854622,
+          "r2_naive": 0.42700526177216813,
+          "mae_test": 1.5972355998089476,
+          "improvement": 0.22609921741329408
+        },
+        "22d": {
+          "horizon": "22d",
+          "gap_days": 22,
+          "train_size": 1480,
+          "val_size": 471,
+          "test_size": 472,
+          "r2_val": -0.2614957778920264,
+          "r2_test": -0.36128877024861517,
+          "r2_naive": -0.1966697156003061,
+          "mae_test": 3.7094198769347386,
+          "improvement": -0.16461905464830906
+        }
+      }
+    }
+  ],
+  "timestamp": "2026-01-09T14:07:06.078688"
+}

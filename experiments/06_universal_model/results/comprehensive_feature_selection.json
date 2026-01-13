@@ -1,0 +1,945 @@
+{
+  "SPY": {
+    "ticker": "SPY",
+    "full_r2": 0.7167640736161248,
+    "lasso_best": {
+      "n_features": 24,
+      "r2": 0.7168085913698337,
+      "features": [
+        "RV_1d",
+        "RV_5d",
+        "VIX_lag1",
+        "VIX_lag5",
+        "CAVB_lag1",
+        "CAVB_lag5",
+        "CAVB_ma5",
+        "RV_10d",
+        "RV_std_22d",
+        "RV_momentum",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_ratio",
+        "RV_VIX_product",
+        "CAVB_VIX_ratio",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "rfe_best": {
+      "n_features": 15,
+      "r2": 0.7211830939928877,
+      "features": [
+        "VIX_lag1",
+        "VIX_lag5",
+        "CAVB_ma5",
+        "RV_10d",
+        "RV_std_22d",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_product",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "mi_top20_r2": 0.7382733185074413,
+    "consensus_features": [
+      "CAVB_ma5",
+      "RV_10d",
+      "VIX_lag10",
+      "VIX_ma22"
+    ],
+    "rankings": {
+      "mi": [
+        {
+          "feature": "CAVB_VIX_ratio",
+          "mi_score": 0.5097859114975014
+        },
+        {
+          "feature": "RV_VIX_ratio",
+          "mi_score": 0.5097859114975014
+        },
+        {
+          "feature": "CAVB_lag1",
+          "mi_score": 0.49001177513193683
+        },
+        {
+          "feature": "VRP_transitory",
+          "mi_score": 0.47488055688424113
+        },
+        {
+          "feature": "CAVB_ma5",
+          "mi_score": 0.4474061676186065
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "mi_score": 0.4464250274582846
+        },
+        {
+          "feature": "VIX_ma22",
+          "mi_score": 0.43822977739724367
+        },
+        {
+          "feature": "RV_22d",
+          "mi_score": 0.4202991790166517
+        },
+        {
+          "feature": "VIX_ma5",
+          "mi_score": 0.38891323269151057
+        },
+        {
+          "feature": "RV_VIX_product",
+          "mi_score": 0.3848355447576348
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "mi_score": 0.3738874736574598
+        },
+        {
+          "feature": "CAVB_percentile",
+          "mi_score": 0.35516388193039283
+        },
+        {
+          "feature": "VIX_lag10",
+          "mi_score": 0.3503128597377203
+        },
+        {
+          "feature": "RV_10d",
+          "mi_score": 0.34765982533194917
+        },
+        {
+          "feature": "VIX_lag1",
+          "mi_score": 0.3373535269615968
+        }
+      ],
+      "perm": [
+        {
+          "feature": "VRP_transitory",
+          "importance": 1.0921171107343377
+        },
+        {
+          "feature": "VIX_ma22",
+          "importance": 0.2910265536190223
+        },
+        {
+          "feature": "CAVB_ma5",
+          "importance": 0.13016070605891641
+        },
+        {
+          "feature": "VRP_persistent",
+          "importance": 0.1227183208152232
+        },
+        {
+          "feature": "RV_10d",
+          "importance": 0.08678484991962407
+        },
+        {
+          "feature": "VIX_lag10",
+          "importance": 0.07089024562956692
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "importance": 0.032723251525103816
+        },
+        {
+          "feature": "RV_std_22d",
+          "importance": 0.03066463439591265
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "importance": 0.025155488387473012
+        },
+        {
+          "feature": "RV_VIX_product",
+          "importance": 0.020703277338796466
+        },
+        {
+          "feature": "VIX_lag5",
+          "importance": 0.015637005055478104
+        },
+        {
+          "feature": "CAVB_lag1",
+          "importance": 0.015201202216668019
+        },
+        {
+          "feature": "VIX_change",
+          "importance": 0.014244626040679475
+        },
+        {
+          "feature": "VIX_lag22",
+          "importance": 0.0137141294293452
+        },
+        {
+          "feature": "CAVB_std_22d",
+          "importance": 0.009808363990593672
+        }
+      ]
+    }
+  },
+  "GLD": {
+    "ticker": "GLD",
+    "full_r2": 0.8729022448093068,
+    "lasso_best": {
+      "n_features": 22,
+      "r2": 0.8730190004005375,
+      "features": [
+        "RV_1d",
+        "RV_5d",
+        "RV_22d",
+        "VIX_change",
+        "CAVB_lag1",
+        "CAVB_lag5",
+        "CAVB_ma5",
+        "RV_10d",
+        "RV_std_22d",
+        "RV_momentum",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_zscore",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_ratio",
+        "RV_VIX_product",
+        "CAVB_VIX_ratio",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "rfe_best": {
+      "n_features": 25,
+      "r2": 0.8729015957010906,
+      "features": [
+        "RV_1d",
+        "RV_5d",
+        "RV_22d",
+        "VIX_lag1",
+        "VIX_change",
+        "CAVB_lag1",
+        "CAVB_ma5",
+        "RV_10d",
+        "RV_std_22d",
+        "RV_momentum",
+        "RV_acceleration",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_ratio",
+        "RV_VIX_product",
+        "CAVB_VIX_ratio",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "mi_top20_r2": 0.8482853377627249,
+    "consensus_features": [
+      "CAVB_lag1",
+      "CAVB_ma5"
+    ],
+    "rankings": {
+      "mi": [
+        {
+          "feature": "CAVB_lag1",
+          "mi_score": 0.9217954591589024
+        },
+        {
+          "feature": "RV_VIX_ratio",
+          "mi_score": 0.9141487899531158
+        },
+        {
+          "feature": "CAVB_VIX_ratio",
+          "mi_score": 0.9141487899531158
+        },
+        {
+          "feature": "CAVB_ma5",
+          "mi_score": 0.8906517321249399
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "mi_score": 0.6667603599047829
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "mi_score": 0.6654770845310352
+        },
+        {
+          "feature": "VIX_ma5",
+          "mi_score": 0.5536617270442856
+        },
+        {
+          "feature": "VRP_persistent",
+          "mi_score": 0.5436180714275922
+        },
+        {
+          "feature": "VIX_ma22",
+          "mi_score": 0.5340782355410929
+        },
+        {
+          "feature": "VIX_lag1",
+          "mi_score": 0.5116559099364122
+        },
+        {
+          "feature": "CAVB_lag5",
+          "mi_score": 0.49808138984859607
+        },
+        {
+          "feature": "VRP_transitory",
+          "mi_score": 0.49069021234695365
+        },
+        {
+          "feature": "RV_VIX_product",
+          "mi_score": 0.4319066716111193
+        },
+        {
+          "feature": "RV_22d",
+          "mi_score": 0.39096543760524893
+        },
+        {
+          "feature": "CAVB_std_22d",
+          "mi_score": 0.3871651293873497
+        }
+      ],
+      "perm": [
+        {
+          "feature": "VRP_transitory",
+          "importance": 0.7638365131204504
+        },
+        {
+          "feature": "VRP_persistent",
+          "importance": 0.41084449825969305
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "importance": 0.09068560871504264
+        },
+        {
+          "feature": "RV_10d",
+          "importance": 0.06091919302895803
+        },
+        {
+          "feature": "RV_VIX_product",
+          "importance": 0.010059104240738092
+        },
+        {
+          "feature": "CAVB_lag1",
+          "importance": 0.009051959125171871
+        },
+        {
+          "feature": "RV_std_22d",
+          "importance": 0.00856595142777904
+        },
+        {
+          "feature": "VIX_change",
+          "importance": 0.008304890335903259
+        },
+        {
+          "feature": "CAVB_ma5",
+          "importance": 0.007856370655138955
+        },
+        {
+          "feature": "CAVB_std_22d",
+          "importance": 0.005241633718111838
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "importance": 0.004628076193220987
+        },
+        {
+          "feature": "RV_5d",
+          "importance": 0.003362656122996954
+        },
+        {
+          "feature": "VIX_lag22",
+          "importance": 0.0021122606798232523
+        },
+        {
+          "feature": "VIX_lag1",
+          "importance": 0.0020243279383555524
+        },
+        {
+          "feature": "VIX_lag10",
+          "importance": 0.0014583229046645774
+        }
+      ]
+    }
+  },
+  "TLT": {
+    "ticker": "TLT",
+    "full_r2": 0.8366876971574897,
+    "lasso_best": {
+      "n_features": 26,
+      "r2": 0.8366876267414172,
+      "features": [
+        "RV_1d",
+        "RV_5d",
+        "RV_22d",
+        "VIX_lag1",
+        "VIX_lag5",
+        "VIX_change",
+        "CAVB_lag1",
+        "CAVB_lag5",
+        "CAVB_ma5",
+        "RV_10d",
+        "RV_std_22d",
+        "RV_momentum",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_ratio",
+        "RV_VIX_product",
+        "CAVB_VIX_ratio",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "rfe_best": {
+      "n_features": 20,
+      "r2": 0.8367936714891034,
+      "features": [
+        "RV_1d",
+        "RV_22d",
+        "VIX_lag1",
+        "VIX_lag5",
+        "VIX_change",
+        "CAVB_lag1",
+        "CAVB_lag5",
+        "RV_10d",
+        "RV_std_22d",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_product",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "mi_top20_r2": 0.8125730851160371,
+    "consensus_features": [
+      "CAVB_lag5",
+      "VIX_ma5"
+    ],
+    "rankings": {
+      "mi": [
+        {
+          "feature": "CAVB_lag1",
+          "mi_score": 1.0811758833439402
+        },
+        {
+          "feature": "RV_VIX_ratio",
+          "mi_score": 1.0679225631481826
+        },
+        {
+          "feature": "CAVB_VIX_ratio",
+          "mi_score": 1.0679225631481826
+        },
+        {
+          "feature": "CAVB_ma5",
+          "mi_score": 1.0164540081420914
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "mi_score": 0.8397171902056582
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "mi_score": 0.7252292416772139
+        },
+        {
+          "feature": "VIX_ma5",
+          "mi_score": 0.6971871338216746
+        },
+        {
+          "feature": "VRP_persistent",
+          "mi_score": 0.6817756670239437
+        },
+        {
+          "feature": "VIX_lag1",
+          "mi_score": 0.6608880325027418
+        },
+        {
+          "feature": "CAVB_lag5",
+          "mi_score": 0.6515397016470121
+        },
+        {
+          "feature": "VIX_ma22",
+          "mi_score": 0.5683781944486013
+        },
+        {
+          "feature": "VIX_lag5",
+          "mi_score": 0.4396200778081467
+        },
+        {
+          "feature": "RV_VIX_product",
+          "mi_score": 0.38498982909918444
+        },
+        {
+          "feature": "VRP_transitory",
+          "mi_score": 0.37994114459215345
+        },
+        {
+          "feature": "VIX_lag10",
+          "mi_score": 0.34438054635899507
+        }
+      ],
+      "perm": [
+        {
+          "feature": "VRP_transitory",
+          "importance": 0.5510718468463283
+        },
+        {
+          "feature": "VRP_persistent",
+          "importance": 0.4650207578975576
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "importance": 0.18582589609145989
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "importance": 0.12681293715004288
+        },
+        {
+          "feature": "CAVB_std_22d",
+          "importance": 0.09917829813907898
+        },
+        {
+          "feature": "RV_10d",
+          "importance": 0.04607800238824204
+        },
+        {
+          "feature": "RV_22d",
+          "importance": 0.04058818844436092
+        },
+        {
+          "feature": "VIX_ma22",
+          "importance": 0.02239317621415273
+        },
+        {
+          "feature": "VIX_lag22",
+          "importance": 0.012933686161978885
+        },
+        {
+          "feature": "CAVB_percentile",
+          "importance": 0.010220964924471231
+        },
+        {
+          "feature": "VIX_zscore",
+          "importance": 0.009415075182844623
+        },
+        {
+          "feature": "CAVB_lag5",
+          "importance": 0.007729855714079192
+        },
+        {
+          "feature": "RV_std_22d",
+          "importance": 0.007074156427075329
+        },
+        {
+          "feature": "RV_VIX_product",
+          "importance": 0.007044087339206251
+        },
+        {
+          "feature": "VIX_ma5",
+          "importance": 0.002998493078897202
+        }
+      ]
+    }
+  },
+  "EFA": {
+    "ticker": "EFA",
+    "full_r2": 0.7417399357222471,
+    "lasso_best": {
+      "n_features": 23,
+      "r2": 0.7417513413992647,
+      "features": [
+        "RV_1d",
+        "VIX_lag5",
+        "VIX_change",
+        "CAVB_lag1",
+        "CAVB_lag5",
+        "RV_10d",
+        "RV_std_22d",
+        "RV_momentum",
+        "RV_acceleration",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_ratio",
+        "RV_VIX_product",
+        "CAVB_VIX_ratio",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "rfe_best": {
+      "n_features": 15,
+      "r2": 0.7420114428915006,
+      "features": [
+        "VIX_lag5",
+        "VIX_change",
+        "CAVB_lag1",
+        "RV_10d",
+        "RV_std_22d",
+        "VIX_lag10",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_product",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "mi_top20_r2": 0.7522140572144662,
+    "consensus_features": [
+      "CAVB_lag1",
+      "RV_10d",
+      "VIX_ma22"
+    ],
+    "rankings": {
+      "mi": [
+        {
+          "feature": "CAVB_VIX_ratio",
+          "mi_score": 0.6069651629672501
+        },
+        {
+          "feature": "RV_VIX_ratio",
+          "mi_score": 0.6069651629672501
+        },
+        {
+          "feature": "CAVB_lag1",
+          "mi_score": 0.5579633164137414
+        },
+        {
+          "feature": "CAVB_ma5",
+          "mi_score": 0.5402972954863654
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "mi_score": 0.5007816610539688
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "mi_score": 0.46737744882636756
+        },
+        {
+          "feature": "VRP_transitory",
+          "mi_score": 0.4390638740404338
+        },
+        {
+          "feature": "VRP_persistent",
+          "mi_score": 0.4245155120713231
+        },
+        {
+          "feature": "VIX_ma22",
+          "mi_score": 0.36854989149687567
+        },
+        {
+          "feature": "RV_22d",
+          "mi_score": 0.3491513197358911
+        },
+        {
+          "feature": "RV_10d",
+          "mi_score": 0.3312697900047632
+        },
+        {
+          "feature": "RV_VIX_product",
+          "mi_score": 0.32557351808862034
+        },
+        {
+          "feature": "VIX_ma5",
+          "mi_score": 0.3232500243789356
+        },
+        {
+          "feature": "CAVB_lag5",
+          "mi_score": 0.27591712445850236
+        },
+        {
+          "feature": "CAVB_std_22d",
+          "mi_score": 0.27106391694788057
+        }
+      ],
+      "perm": [
+        {
+          "feature": "VRP_transitory",
+          "importance": 1.1419748209549723
+        },
+        {
+          "feature": "VIX_ma22",
+          "importance": 0.3207720060727516
+        },
+        {
+          "feature": "VRP_persistent",
+          "importance": 0.1843924130164604
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "importance": 0.1686786956988448
+        },
+        {
+          "feature": "CAVB_std_22d",
+          "importance": 0.166295405943437
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "importance": 0.0807845853103137
+        },
+        {
+          "feature": "RV_10d",
+          "importance": 0.07193823338107999
+        },
+        {
+          "feature": "CAVB_lag1",
+          "importance": 0.03561625070428762
+        },
+        {
+          "feature": "VIX_change",
+          "importance": 0.02703301180843932
+        },
+        {
+          "feature": "VIX_lag10",
+          "importance": 0.024525287899306837
+        },
+        {
+          "feature": "RV_VIX_product",
+          "importance": 0.01576992794059736
+        },
+        {
+          "feature": "CAVB_lag5",
+          "importance": 0.01121033669832222
+        },
+        {
+          "feature": "VIX_lag5",
+          "importance": 0.011009381430737708
+        },
+        {
+          "feature": "RV_std_22d",
+          "importance": 0.004588413974178529
+        },
+        {
+          "feature": "RV_acceleration",
+          "importance": 0.0038308974034029775
+        }
+      ]
+    }
+  },
+  "EEM": {
+    "ticker": "EEM",
+    "full_r2": 0.6941418267012079,
+    "lasso_best": {
+      "n_features": 20,
+      "r2": 0.6952037427890574,
+      "features": [
+        "RV_1d",
+        "VIX_lag1",
+        "VIX_lag5",
+        "VIX_change",
+        "RV_10d",
+        "RV_std_22d",
+        "RV_momentum",
+        "RV_acceleration",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "RV_VIX_product",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "rfe_best": {
+      "n_features": 15,
+      "r2": 0.6956846257333326,
+      "features": [
+        "VIX_lag1",
+        "VIX_lag5",
+        "RV_10d",
+        "RV_momentum",
+        "RV_acceleration",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma22",
+        "CAVB_percentile",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "CAVB_VIX_ratio",
+        "VRP_persistent",
+        "VRP_transitory"
+      ]
+    },
+    "mi_top20_r2": 0.6997492509768707,
+    "consensus_features": [
+      "CAVB_std_22d",
+      "VIX_ma22"
+    ],
+    "rankings": {
+      "mi": [
+        {
+          "feature": "CAVB_VIX_ratio",
+          "mi_score": 0.7310808364229406
+        },
+        {
+          "feature": "RV_VIX_ratio",
+          "mi_score": 0.7310808364229406
+        },
+        {
+          "feature": "CAVB_lag1",
+          "mi_score": 0.64115959430857
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "mi_score": 0.6093223390260771
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "mi_score": 0.5782514464193431
+        },
+        {
+          "feature": "CAVB_ma5",
+          "mi_score": 0.5672513121664644
+        },
+        {
+          "feature": "VRP_persistent",
+          "mi_score": 0.4792229554134
+        },
+        {
+          "feature": "VIX_ma22",
+          "mi_score": 0.46659293835184057
+        },
+        {
+          "feature": "VRP_transitory",
+          "mi_score": 0.4474841810313457
+        },
+        {
+          "feature": "RV_VIX_product",
+          "mi_score": 0.43702279359571783
+        },
+        {
+          "feature": "RV_22d",
+          "mi_score": 0.42956496159756874
+        },
+        {
+          "feature": "VIX_ma5",
+          "mi_score": 0.3838445448021446
+        },
+        {
+          "feature": "CAVB_lag5",
+          "mi_score": 0.36690837300570633
+        },
+        {
+          "feature": "CAVB_std_22d",
+          "mi_score": 0.33900814446813454
+        },
+        {
+          "feature": "RV_std_22d",
+          "mi_score": 0.3238117051079219
+        }
+      ],
+      "perm": [
+        {
+          "feature": "VRP_transitory",
+          "importance": 0.7903114187910129
+        },
+        {
+          "feature": "VIX_ma22",
+          "importance": 0.2831099135054108
+        },
+        {
+          "feature": "CAVB_std_22d",
+          "importance": 0.26843694012788366
+        },
+        {
+          "feature": "VRP_persistent",
+          "importance": 0.19070895102601426
+        },
+        {
+          "feature": "CAVB_max_22d",
+          "importance": 0.17102566133167332
+        },
+        {
+          "feature": "RV_10d",
+          "importance": 0.060571772485377894
+        },
+        {
+          "feature": "VIX_lag10",
+          "importance": 0.06031872364373221
+        },
+        {
+          "feature": "CAVB_min_22d",
+          "importance": 0.0489540527152373
+        },
+        {
+          "feature": "CAVB_percentile",
+          "importance": 0.029131013154282792
+        },
+        {
+          "feature": "VIX_lag5",
+          "importance": 0.016773159705777464
+        },
+        {
+          "feature": "VIX_lag22",
+          "importance": 0.013674906857188395
+        },
+        {
+          "feature": "VIX_change",
+          "importance": 0.00999824752328372
+        },
+        {
+          "feature": "RV_acceleration",
+          "importance": 0.003481150105577968
+        },
+        {
+          "feature": "RV_VIX_product",
+          "importance": 0.0022786267524215085
+        },
+        {
+          "feature": "RV_VIX_ratio",
+          "importance": 0.0012802073682384508
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "results": {
+    "HAR-RV": {
+      "r2": 0.03539882502510905,
+      "target": "RV"
+    },
+    "ElasticNet_RV": {
+      "r2": 0.0801140089331247,
+      "target": "RV"
+    },
+    "ElasticNet_VRP": {
+      "r2": 0.13226875819094597,
+      "target": "VRP"
+    },
+    "GradientBoosting_VRP": {
+      "r2": 0.04706723977561811,
+      "target": "VRP"
+    }
+  },
+  "strategy": {
+    "direction_accuracy": 0.7127272727272728,
+    "vrp_mean": 0.3663646702667525,
+    "vrp_positive_ratio": 0.6727272727272727
+  },
+  "timestamp": "2025-12-12T23:12:52.295685"
+}

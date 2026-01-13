@@ -1,0 +1,34 @@
+{
+  "description": "Subperiod analysis: Pre-COVID / COVID / Post-COVID",
+  "periods": {
+    "Pre-COVID": [
+      "2015-01-01",
+      "2019-12-31"
+    ],
+    "COVID": [
+      "2020-01-01",
+      "2020-12-31"
+    ],
+    "Post-COVID": [
+      "2021-01-01",
+      "2024-12-31"
+    ]
+  },
+  "results": [
+    {
+      "asset": "EFA",
+      "asset_name": "EAFE (선진국)",
+      "periods": [
+        {
+          "period": "Pre-COVID",
+          "start": "2015-01-01",
+          "end": "2019-12-31",
+          "n_samples": 1231,
+          "n_test": 225,
+          "r2_ml": -0.31711252788204436,
+          "r2_naive": -0.6332350631626966,
+          "improvement": 0.31612253528065226,
+          "mae": 3.5494718797106675,
+          "t_statistic": 2.5192360904755597,
+          "p_value": 0.012458768194125015,
+          "significant": 

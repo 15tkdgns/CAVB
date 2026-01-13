@@ -1,0 +1,577 @@
+{
+  "description": "Statistical validation with bootstrap t-tests and 3-way split",
+  "methodology": {
+    "split": "Train(60%) / Validation(20%) / Test(20%)",
+    "gap": 22,
+    "bootstrap_iterations": 500,
+    "significance_level": 0.05
+  },
+  "results": [
+    {
+      "asset": "EFA",
+      "asset_name": "EAFE (선진국)",
+      "n_samples": 2467,
+      "train_size": 1480,
+      "val_size": 471,
+      "test_size": 472,
+      "r2_validation": -0.1418111202493446,
+      "r2_test": 0.17550363652261136,
+      "mae_test": 2.4625601721069206,
+      "coefficients": [
+        {
+          "Variable": "VIX_lag1",
+          "Coefficient": 5.745661600513316,
+          "Std_Error": 1.5053938603404342,
+          "t_statistic": 3.816716509546746,
+          "p_value": 0.00015223209586601172,
+          "CI_Lower": 2.928900871202137,
+          "CI_Upper": 8.771508400730111,
+          "Significant": true,
+          "Sig": "***"
+        },
+        {
+          "Variable": "VIX_change",
+          "Coefficient": 1.3059023843215078,
+          "Std_Error": 0.38440557509331974,
+          "t_statistic": 3.397199386779867,
+          "p_value": 0.0007351843799570101,
+          "CI_Lower": 0.6073848477257517,
+          "CI_Upper": 2.0828894113666787,
+          "Significant": true,
+          "Sig": "***"
+        },
+        {
+          "Variable": "VIX_lag5",
+          "Coefficient": -2.534476767860179,
+          "Std_Error": 1.1639372740086482,
+          "t_statistic": -2.1775028811592105,
+          "p_value": 0.029910811632312795,
+          "CI_Lower": -4.886262909653729,
+          "CI_Upper": -0.30833197291151904,
+          "Significant": true,
+          "Sig": "*"
+        },
+        {
+          "Variable": "RV_1d",
+          "Coefficient": 0.8252060186658996,
+          "Std_Error": 0.41306706554616046,
+          "t_statistic": 1.997753118794476,
+          "p_value": 0.046285779652801784,
+          "CI_Lower": 0.006224225759400229,
+          "CI_Upper": 1.6122648579983043,
+          "Significant": true,
+          "Sig": "*"
+        },
+        {
+          "Variable": "RV_22d",
+          "Coefficient": 1.5546517279807603,
+          "Std_Error": 1.2224087303024962,
+          "t_statistic": 1.2717937047691636,
+          "p_value": 0.20403882993555578,
+          "CI_Lower": -0.3077467386307509,
+          "CI_Upper": 3.928772348167797,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "RV_5d",
+          "Coefficient": 0.5602596254292708,
+          "Std_Error": 0.4922379340971405,
+          "t_statistic": 1.1381886411153508,
+          "p_value": 0.2555878873835551,
+          "CI_Lower": -0.3288798726158964,
+          "CI_Upper": 1.5999592056884002,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_lag1",
+          "Coefficient": 0.543246073658739,
+          "Std_Error": 1.321046813729902,
+          "t_statistic": 0.41122393844907856,
+          "p_value": 0.6810848857311065,
+          "CI_Lower": -2.0483831323835022,
+          "CI_Upper": 3.2618125017416113,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_ma5",
+          "Coefficient": 0.293804060878447,
+          "Std_Error": 1.722423872707005,
+          "t_statistic": 0.17057593401770468,
+          "p_value": 0.8646263615394543,
+          "CI_Lower": -3.0787582127747903,
+          "CI_Upper": 3.7777318796115362,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_lag5",
+          "Coefficient": 0.014303161543551244,
+          "Std_Error": 0.6369055229265587,
+          "t_statistic": 0.022457273530276496,
+          "p_value": 0.9820921712969093,
+          "CI_Lower": -1.21539330595666,
+          "CI_Upper": 1.3427540928010537,
+          "Significant": false,
+          "Sig": ""
+        }
+      ],
+      "n_significant": 4
+    },
+    {
+      "asset": "TLT",
+      "asset_name": "Treasury (국채)",
+      "n_samples": 2467,
+      "train_size": 1480,
+      "val_size": 471,
+      "test_size": 472,
+      "r2_validation": -0.28627602113886197,
+      "r2_test": 0.08249832122871525,
+      "mae_test": 3.4800258763644845,
+      "coefficients": [
+        {
+          "Variable": "VIX_lag5",
+          "Coefficient": -2.559968649129394,
+          "Std_Error": 0.8229522330102764,
+          "t_statistic": -3.1107135337056135,
+          "p_value": 0.001973170346677211,
+          "CI_Lower": -4.210449013450189,
+          "CI_Upper": -1.0685400499455202,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "RV_5d",
+          "Coefficient": 0.8454414981111249,
+          "Std_Error": 0.31165403361039135,
+          "t_statistic": 2.712756475652623,
+          "p_value": 0.006903125844350377,
+          "CI_Lower": 0.19551653773307057,
+          "CI_Upper": 1.4421471284212903,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "VIX_lag1",
+          "Coefficient": 2.8198103435197077,
+          "Std_Error": 1.0657337234841464,
+          "t_statistic": 2.6458863796075285,
+          "p_value": 0.008404882713872075,
+          "CI_Lower": 0.6898235541856059,
+          "CI_Upper": 5.023334239926523,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "VIX_change",
+          "Coefficient": 0.7353893369698521,
+          "Std_Error": 0.2843758510933936,
+          "t_statistic": 2.585976741287152,
+          "p_value": 0.009992588714333728,
+          "CI_Lower": 0.2393862809717771,
+          "CI_Upper": 1.284655318247958,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "RV_22d",
+          "Coefficient": 1.508353231380436,
+          "Std_Error": 0.6247368708231149,
+          "t_statistic": 2.4143816406284526,
+          "p_value": 0.016120753361704265,
+          "CI_Lower": 0.17138737266305612,
+          "CI_Upper": 2.6940319378336355,
+          "Significant": true,
+          "Sig": "*"
+        },
+        {
+          "Variable": "RV_1d",
+          "Coefficient": 0.6171471379524662,
+          "Std_Error": 0.30969577055499414,
+          "t_statistic": 1.9927528769515475,
+          "p_value": 0.04683273110980091,
+          "CI_Lower": 0.004041360521330865,
+          "CI_Upper": 1.2326580927557989,
+          "Significant": true,
+          "Sig": "*"
+        },
+        {
+          "Variable": "CAVB_lag5",
+          "Coefficient": -0.319607773981649,
+          "Std_Error": 0.4428077833354264,
+          "t_statistic": -0.721775420255811,
+          "p_value": 0.4707706327834402,
+          "CI_Lower": -1.2616746480119805,
+          "CI_Upper": 0.47728887699570444,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_lag1",
+          "Coefficient": 0.4949450980927884,
+          "Std_Error": 0.9996213785682342,
+          "t_statistic": 0.495132565844269,
+          "p_value": 0.6207244967783465,
+          "CI_Lower": -1.540600113918664,
+          "CI_Upper": 2.709485156354872,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_ma5",
+          "Coefficient": 0.16751047744736375,
+          "Std_Error": 1.2633285484589378,
+          "t_statistic": 0.1325945476641375,
+          "p_value": 0.8945674944905342,
+          "CI_Lower": -2.468454189046962,
+          "CI_Upper": 2.7516472970469783,
+          "Significant": false,
+          "Sig": ""
+        }
+      ],
+      "n_significant": 6
+    },
+    {
+      "asset": "GLD",
+      "asset_name": "Gold (금)",
+      "n_samples": 2467,
+      "train_size": 1480,
+      "val_size": 471,
+      "test_size": 472,
+      "r2_validation": 0.5962122323064507,
+      "r2_test": 0.31656242300388127,
+      "mae_test": 2.8838052606535762,
+      "coefficients": [
+        {
+          "Variable": "VIX_lag1",
+          "Coefficient": 1.966713533451641,
+          "Std_Error": 0.5992089234331063,
+          "t_statistic": 3.282183319058966,
+          "p_value": 0.00110223665528153,
+          "CI_Lower": 0.7590897578171848,
+          "CI_Upper": 3.065043679807134,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "RV_22d",
+          "Coefficient": 1.3453237629656494,
+          "Std_Error": 0.4422814346029735,
+          "t_statistic": 3.0417821265076146,
+          "p_value": 0.002475603102360502,
+          "CI_Lower": 0.520561004251521,
+          "CI_Upper": 2.247595192467669,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "RV_5d",
+          "Coefficient": 0.5572255160467684,
+          "Std_Error": 0.19744096688738635,
+          "t_statistic": 2.8222385888252215,
+          "p_value": 0.004959283577490092,
+          "CI_Lower": 0.1786852124772359,
+          "CI_Upper": 0.946541639985836,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "VIX_change",
+          "Coefficient": 0.37612784180662495,
+          "Std_Error": 0.17444404656702317,
+          "t_statistic": 2.1561517804306245,
+          "p_value": 0.031549019508450904,
+          "CI_Lower": 0.06191220374932351,
+          "CI_Upper": 0.7209529904223051,
+          "Significant": true,
+          "Sig": "*"
+        },
+        {
+          "Variable": "VIX_lag5",
+          "Coefficient": -1.2472977166707235,
+          "Std_Error": 0.584660214571604,
+          "t_statistic": -2.133371974645674,
+          "p_value": 0.033381381232919116,
+          "CI_Lower": -2.5768551600400746,
+          "CI_Upper": -0.09104945175884196,
+          "Significant": true,
+          "Sig": "*"
+        },
+        {
+          "Variable": "RV_1d",
+          "Coefficient": 0.21275448981973816,
+          "Std_Error": 0.1569647613309888,
+          "t_statistic": 1.3554283641763625,
+          "p_value": 0.1758942919798554,
+          "CI_Lower": -0.08706829930683745,
+          "CI_Upper": 0.5003586330662085,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_ma5",
+          "Coefficient": 0.5976708876906021,
+          "Std_Error": 0.6691472408535708,
+          "t_statistic": 0.8931829216524735,
+          "p_value": 0.3721897691613636,
+          "CI_Lower": -0.4598453525536771,
+          "CI_Upper": 2.022261320210991,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_lag5",
+          "Coefficient": 0.2553478779579873,
+          "Std_Error": 0.4089320641429539,
+          "t_statistic": 0.6244261584884684,
+          "p_value": 0.53263313250394,
+          "CI_Lower": -0.47250287708515704,
+          "CI_Upper": 1.2252253737137238,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_lag1",
+          "Coefficient": 0.09116975455359078,
+          "Std_Error": 0.40067755915093867,
+          "t_statistic": 0.22753895856815992,
+          "p_value": 0.8200978760027713,
+          "CI_Lower": -0.7672338796845103,
+          "CI_Upper": 1.0433175757337463,
+          "Significant": false,
+          "Sig": ""
+        }
+      ],
+      "n_significant": 5
+    },
+    {
+      "asset": "SPY",
+      "asset_name": "S&P 500",
+      "n_samples": 2467,
+      "train_size": 1480,
+      "val_size": 471,
+      "test_size": 472,
+      "r2_validation": -0.14552420282926581,
+      "r2_test": -0.0447106886260038,
+      "mae_test": 2.701190525260535,
+      "coefficients": [
+        {
+          "Variable": "VIX_lag1",
+          "Coefficient": 6.991123439456437,
+          "Std_Error": 1.7592313790758032,
+          "t_statistic": 3.9739647224413237,
+          "p_value": 8.111537439425831e-05,
+          "CI_Lower": 3.8658968373962295,
+          "CI_Upper": 10.62456813048381,
+          "Significant": true,
+          "Sig": "***"
+        },
+        {
+          "Variable": "VIX_change",
+          "Coefficient": 1.665793109848308,
+          "Std_Error": 0.42450564072057223,
+          "t_statistic": 3.924077679223105,
+          "p_value": 9.92758263220761e-05,
+          "CI_Lower": 0.8796499735687656,
+          "CI_Upper": 2.562486303451798,
+          "Significant": true,
+          "Sig": "***"
+        },
+        {
+          "Variable": "VIX_lag5",
+          "Coefficient": -4.06526716311767,
+          "Std_Error": 1.5186240127945532,
+          "t_statistic": -2.6769411839926867,
+          "p_value": 0.007674369866942143,
+          "CI_Lower": -7.053124500772829,
+          "CI_Upper": -1.3419170448271027,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "RV_1d",
+          "Coefficient": 1.0794488025368967,
+          "Std_Error": 0.5406353915950821,
+          "t_statistic": 1.9966299267838257,
+          "p_value": 0.04640816794705582,
+          "CI_Lower": 0.0,
+          "CI_Upper": 2.1017741286367895,
+          "Significant": true,
+          "Sig": "*"
+        },
+        {
+          "Variable": "CAVB_lag5",
+          "Coefficient": 1.5842697215406383,
+          "Std_Error": 0.8200985201005698,
+          "t_statistic": 1.9318041461081732,
+          "p_value": 0.05394951918212687,
+          "CI_Lower": 0.06933832601198114,
+          "CI_Upper": 3.230380470377459,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "RV_22d",
+          "Coefficient": 2.1754605956687687,
+          "Std_Error": 1.588493731271773,
+          "t_statistic": 1.3695116025356358,
+          "p_value": 0.17145540618073074,
+          "CI_Lower": -0.06948024648095215,
+          "CI_Upper": 5.254168655327026,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "RV_5d",
+          "Coefficient": 0.9503541596518442,
+          "Std_Error": 0.9123855368328909,
+          "t_statistic": 1.0416146696566344,
+          "p_value": 0.29809475286004905,
+          "CI_Lower": -0.7755032829232614,
+          "CI_Upper": 2.8062180140793216,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_ma5",
+          "Coefficient": -1.0137860788563446,
+          "Std_Error": 2.0457577953051373,
+          "t_statistic": -0.49555528085160083,
+          "p_value": 0.6204263734051012,
+          "CI_Lower": -5.235617413708772,
+          "CI_Upper": 2.5767910985283278,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_lag1",
+          "Coefficient": 0.3934523326462309,
+          "Std_Error": 1.5712326597248054,
+          "t_statistic": 0.25040997600578224,
+          "p_value": 0.8023733811171709,
+          "CI_Lower": -2.50438771903352,
+          "CI_Upper": 3.528195225621389,
+          "Significant": false,
+          "Sig": ""
+        }
+      ],
+      "n_significant": 4
+    },
+    {
+      "asset": "EEM",
+      "asset_name": "Emerging (신흥국)",
+      "n_samples": 2467,
+      "train_size": 1480,
+      "val_size": 471,
+      "test_size": 472,
+      "r2_validation": -0.26149308752715394,
+      "r2_test": -0.36128795998907415,
+      "mae_test": 3.7094222710529587,
+      "coefficients": [
+        {
+          "Variable": "VIX_change",
+          "Coefficient": 1.6248398792577328,
+          "Std_Error": 0.3925786205523267,
+          "t_statistic": 4.138890387249882,
+          "p_value": 4.0965674518833595e-05,
+          "CI_Lower": 0.9140793607961426,
+          "CI_Upper": 2.4829821864245023,
+          "Significant": true,
+          "Sig": "***"
+        },
+        {
+          "Variable": "VIX_lag1",
+          "Coefficient": 6.147000362625159,
+          "Std_Error": 1.6382216541370134,
+          "t_statistic": 3.7522397208746865,
+          "p_value": 0.00019585225249341143,
+          "CI_Lower": 2.9437925396433418,
+          "CI_Upper": 9.37840787623806,
+          "Significant": true,
+          "Sig": "***"
+        },
+        {
+          "Variable": "VIX_lag5",
+          "Coefficient": -3.214994525236329,
+          "Std_Error": 1.1928963274145024,
+          "t_statistic": -2.6951164582215075,
+          "p_value": 0.007273801023738313,
+          "CI_Lower": -5.701548647560976,
+          "CI_Upper": -1.1276542889991432,
+          "Significant": true,
+          "Sig": "**"
+        },
+        {
+          "Variable": "RV_5d",
+          "Coefficient": 1.0056498738392774,
+          "Std_Error": 0.42719501913025937,
+          "t_statistic": 2.3540767765769037,
+          "p_value": 0.018955487638662838,
+          "CI_Lower": 0.09079142744178151,
+          "CI_Upper": 1.8257782564232574,
+          "Significant": true,
+          "Sig": "*"
+        },
+        {
+          "Variable": "RV_1d",
+          "Coefficient": 0.5885412995460138,
+          "Std_Error": 0.3676661604259518,
+          "t_statistic": 1.600749165232114,
+          "p_value": 0.11006535324519384,
+          "CI_Lower": -0.14365281263679677,
+          "CI_Upper": 1.314977502795686,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_lag5",
+          "Coefficient": -0.9148486600829887,
+          "Std_Error": 0.8456774163947969,
+          "t_statistic": -1.0817938876444118,
+          "p_value": 0.2798666263671774,
+          "CI_Lower": -2.5327791651465996,
+          "CI_Upper": 0.6787118035669463,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "RV_22d",
+          "Coefficient": 1.1078360468468105,
+          "Std_Error": 1.452933355851094,
+          "t_statistic": 0.762482354960884,
+          "p_value": 0.44613243706220596,
+          "CI_Lower": -1.4869041263695495,
+          "CI_Upper": 4.046224178747363,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_lag1",
+          "Coefficient": 1.128784135802061,
+          "Std_Error": 1.7041241594595573,
+          "t_statistic": 0.662383740920499,
+          "p_value": 0.5080311247749618,
+          "CI_Lower": -2.134077852088215,
+          "CI_Upper": 4.599893300799306,
+          "Significant": false,
+          "Sig": ""
+        },
+        {
+          "Variable": "CAVB_ma5",
+          "Coefficient": -0.44360041463782557,
+          "Std_Error": 2.129665891321616,
+          "t_statistic": -0.20829577842452504,
+          "p_value": 0.8350830184157241,
+          "CI_Lower": -4.609089278381444,
+          "CI_Upper": 3.6946672725827994,
+          "Significant": false,
+          "Sig": ""
+        }
+      ],
+      "n_significant": 4
+    }
+  ],
+  "timestamp": "2026-01-09T02:21:17.788191"
+}

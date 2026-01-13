@@ -1,0 +1,88 @@
+{
+  "experiment": "VIX Integration",
+  "date": "2025-10-02T17:50:58.447856",
+  "baseline": {
+    "features": 26,
+    "cv_r2_mean": 0.31250640577090644,
+    "cv_r2_std": 0.1667697864411542,
+    "cv_scores": [
+      0.3542063922599007,
+      0.3612745885687155,
+      0.48516563602208085,
+      0.3687116595549752,
+      -0.006826247551140252
+    ]
+  },
+  "vix_integrated": {
+    "features": 42,
+    "added_features": 16,
+    "cv_r2_mean": 0.2372339240854092,
+    "cv_r2_std": 0.2538223207568195,
+    "cv_scores": [
+      0.3928066390868933,
+      0.23374518194248983,
+      0.4359710859485365,
+      0.3755745462108321,
+      -0.2519278327617058
+    ]
+  },
+  "improvement": {
+    "cv_r2_delta": -0.07527248168549724,
+    "cv_r2_pct": -24.08670039892825,
+    "improved_folds": 2,
+    "total_folds": 5
+  },
+  "top_vix_features": [
+    {
+      "feature": "vix_momentum_60",
+      "coefficient": 0.003606593060002523,
+      "abs_coefficient": 0.003606593060002523
+    },
+    {
+      "feature": "vix_ma_20",
+      "coefficient": -0.002733244948248592,
+      "abs_coefficient": 0.002733244948248592
+    },
+    {
+      "feature": "vix_annualized",
+      "coefficient": 0.0026787943382553074,
+      "abs_coefficient": 0.0026787943382553074
+    },
+    {
+      "feature": "vix_ma_60",
+      "coefficient": 0.002168602177563829,
+      "abs_coefficient": 0.002168602177563829
+    },
+    {
+      "feature": "vix_momentum_20",
+      "coefficient": 0.0019060875530710613,
+      "abs_coefficient": 0.0019060875530710613
+    },
+    {
+      "feature": "vix_change_5d",
+      "coefficient": -0.0014491307280078349,
+      "abs_coefficient": 0.0014491307280078349
+    },
+    {
+      "feature": "vix_rv_spread",
+      "coefficient": -0.000869180837064654,
+      "abs_coefficient": 0.000869180837064654
+    },
+    {
+      "feature": "vix_std_20",
+      "coefficient": 0.0007417742087321731,
+      "abs_coefficient": 0.0007417742087321731
+    },
+    {
+      "feature": "vix_change_1d",
+      "coefficient": -0.0005458530520797674,
+      "abs_coefficient": 0.0005458530520797674
+    },
+    {
+      "feature": "vix_percentile_60d",
+      "coefficient": -0.0004257385145358361,
+      "abs_coefficient": 0.0004257385145358361
+    }
+  ],
+  "conclusion": "VIX \ud1b5\ud569 \ud6a8\uacfc \uac80\uc99d \uc644\ub8cc"
+}

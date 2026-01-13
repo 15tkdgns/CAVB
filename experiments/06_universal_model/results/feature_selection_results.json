@@ -1,0 +1,430 @@
+{
+  "SPY": {
+    "ticker": "SPY",
+    "baseline_9": {
+      "r2": 0.6944562363218825,
+      "mae": 1.1383058347528436,
+      "n_features": 9
+    },
+    "enhanced_25": {
+      "r2": 0.6992560350660142,
+      "mae": 1.142059319304045,
+      "n_features": 25
+    },
+    "selected": {
+      "r2": 0.6992868249770816,
+      "mae": 1.141963400966838,
+      "n_features": 23
+    },
+    "selected_features": [
+      "RV_1d",
+      "RV_22d",
+      "VIX_lag1",
+      "VIX_lag5",
+      "VIX_change",
+      "CAVB_lag1",
+      "CAVB_ma5",
+      "RV_10d",
+      "RV_std_22d",
+      "RV_momentum",
+      "RV_acceleration",
+      "VIX_lag10",
+      "VIX_lag22",
+      "VIX_ma5",
+      "VIX_ma22",
+      "VIX_zscore",
+      "CAVB_percentile",
+      "CAVB_std_22d",
+      "CAVB_max_22d",
+      "CAVB_min_22d",
+      "RV_VIX_ratio",
+      "RV_VIX_product",
+      "CAVB_VIX_ratio"
+    ],
+    "top_10_features": [
+      {
+        "feature": "VIX_ma22",
+        "coef": 2.732197718989356
+      },
+      {
+        "feature": "RV_22d",
+        "coef": 2.0931699104148613
+      },
+      {
+        "feature": "RV_10d",
+        "coef": 1.7256785592996695
+      },
+      {
+        "feature": "CAVB_ma5",
+        "coef": 1.4600100732133228
+      },
+      {
+        "feature": "VIX_lag22",
+        "coef": 1.0938214511317328
+      },
+      {
+        "feature": "VIX_lag10",
+        "coef": 1.083796003140746
+      },
+      {
+        "feature": "CAVB_lag1",
+        "coef": 1.015922759364874
+      },
+      {
+        "feature": "CAVB_min_22d",
+        "coef": 0.7764572956789252
+      },
+      {
+        "feature": "RV_std_22d",
+        "coef": 0.7733454521034301
+      },
+      {
+        "feature": "VIX_lag5",
+        "coef": 0.7653250940820212
+      }
+    ]
+  },
+  "GLD": {
+    "ticker": "GLD",
+    "baseline_9": {
+      "r2": 0.8505009358812383,
+      "mae": 1.2617383228825783,
+      "n_features": 9
+    },
+    "enhanced_25": {
+      "r2": 0.8694545256148787,
+      "mae": 1.1778192449424734,
+      "n_features": 25
+    },
+    "selected": {
+      "r2": 0.8694541062824336,
+      "mae": 1.1778198381651193,
+      "n_features": 23
+    },
+    "selected_features": [
+      "RV_1d",
+      "RV_5d",
+      "RV_22d",
+      "VIX_lag1",
+      "VIX_lag5",
+      "VIX_change",
+      "CAVB_lag1",
+      "CAVB_lag5",
+      "CAVB_ma5",
+      "RV_10d",
+      "RV_std_22d",
+      "RV_momentum",
+      "VIX_lag10",
+      "VIX_lag22",
+      "VIX_ma5",
+      "VIX_zscore",
+      "CAVB_percentile",
+      "CAVB_std_22d",
+      "CAVB_max_22d",
+      "CAVB_min_22d",
+      "RV_VIX_ratio",
+      "RV_VIX_product",
+      "CAVB_VIX_ratio"
+    ],
+    "top_10_features": [
+      {
+        "feature": "VIX_lag1",
+        "coef": 2.0692812128849063
+      },
+      {
+        "feature": "CAVB_lag1",
+        "coef": 1.972438660331423
+      },
+      {
+        "feature": "CAVB_min_22d",
+        "coef": 1.3322971532422898
+      },
+      {
+        "feature": "CAVB_ma5",
+        "coef": 1.2946810442218821
+      },
+      {
+        "feature": "VIX_change",
+        "coef": 1.254051510546637
+      },
+      {
+        "feature": "RV_22d",
+        "coef": 1.0560638096032309
+      },
+      {
+        "feature": "RV_10d",
+        "coef": 1.0445671299706558
+      },
+      {
+        "feature": "VIX_ma5",
+        "coef": 0.7991704064330889
+      },
+      {
+        "feature": "CAVB_std_22d",
+        "coef": 0.7963191631060511
+      },
+      {
+        "feature": "CAVB_max_22d",
+        "coef": 0.7524554532571919
+      }
+    ]
+  },
+  "TLT": {
+    "ticker": "TLT",
+    "baseline_9": {
+      "r2": 0.7897262130420692,
+      "mae": 1.5287702680844215,
+      "n_features": 9
+    },
+    "enhanced_25": {
+      "r2": 0.8354080364435758,
+      "mae": 1.298551871012725,
+      "n_features": 25
+    },
+    "selected": {
+      "r2": 0.8358638797576973,
+      "mae": 1.292020503425424,
+      "n_features": 23
+    },
+    "selected_features": [
+      "RV_1d",
+      "RV_5d",
+      "RV_22d",
+      "VIX_lag1",
+      "VIX_lag5",
+      "VIX_change",
+      "CAVB_lag5",
+      "CAVB_ma5",
+      "RV_10d",
+      "RV_std_22d",
+      "RV_momentum",
+      "VIX_lag10",
+      "VIX_lag22",
+      "VIX_ma5",
+      "VIX_ma22",
+      "VIX_zscore",
+      "CAVB_percentile",
+      "CAVB_std_22d",
+      "CAVB_max_22d",
+      "CAVB_min_22d",
+      "RV_VIX_ratio",
+      "RV_VIX_product",
+      "CAVB_VIX_ratio"
+    ],
+    "top_10_features": [
+      {
+        "feature": "RV_22d",
+        "coef": 3.7412480239750603
+      },
+      {
+        "feature": "VIX_lag1",
+        "coef": 3.2932701891873264
+      },
+      {
+        "feature": "CAVB_max_22d",
+        "coef": 1.8271268165535306
+      },
+      {
+        "feature": "VIX_ma22",
+        "coef": 1.4481803195855014
+      },
+      {
+        "feature": "CAVB_min_22d",
+        "coef": 1.1953039390785165
+      },
+      {
+        "feature": "CAVB_std_22d",
+        "coef": 1.0526564160498857
+      },
+      {
+        "feature": "VIX_ma5",
+        "coef": 1.050021320089208
+      },
+      {
+        "feature": "VIX_change",
+        "coef": 1.0461477117917417
+      },
+      {
+        "feature": "VIX_lag22",
+        "coef": 0.8926244076500215
+      },
+      {
+        "feature": "RV_10d",
+        "coef": 0.7206140460184477
+      }
+    ]
+  },
+  "EFA": {
+    "ticker": "EFA",
+    "baseline_9": {
+      "r2": 0.7232846131556765,
+      "mae": 1.2628037145635225,
+      "n_features": 9
+    },
+    "enhanced_25": {
+      "r2": 0.7280169835352479,
+      "mae": 1.28800788649892,
+      "n_features": 25
+    },
+    "selected": {
+      "r2": 0.7280168238810238,
+      "mae": 1.2880080059211854,
+      "n_features": 24
+    },
+    "selected_features": [
+      "RV_1d",
+      "RV_22d",
+      "VIX_lag1",
+      "VIX_lag5",
+      "VIX_change",
+      "CAVB_lag1",
+      "CAVB_lag5",
+      "CAVB_ma5",
+      "RV_10d",
+      "RV_std_22d",
+      "RV_momentum",
+      "RV_acceleration",
+      "VIX_lag10",
+      "VIX_lag22",
+      "VIX_ma5",
+      "VIX_ma22",
+      "VIX_zscore",
+      "CAVB_percentile",
+      "CAVB_std_22d",
+      "CAVB_max_22d",
+      "CAVB_min_22d",
+      "RV_VIX_ratio",
+      "RV_VIX_product",
+      "CAVB_VIX_ratio"
+    ],
+    "top_10_features": [
+      {
+        "feature": "VIX_ma22",
+        "coef": 2.9897056117928877
+      },
+      {
+        "feature": "RV_22d",
+        "coef": 2.511774228815287
+      },
+      {
+        "feature": "RV_10d",
+        "coef": 2.2773124690558717
+      },
+      {
+        "feature": "CAVB_min_22d",
+        "coef": 1.5345404757667205
+      },
+      {
+        "feature": "VIX_lag1",
+        "coef": 1.3945532865421282
+      },
+      {
+        "feature": "CAVB_std_22d",
+        "coef": 1.2715254063791113
+      },
+      {
+        "feature": "CAVB_lag1",
+        "coef": 1.21330185179478
+      },
+      {
+        "feature": "CAVB_max_22d",
+        "coef": 1.167910893522812
+      },
+      {
+        "feature": "VIX_change",
+        "coef": 1.0315094371431657
+      },
+      {
+        "feature": "CAVB_ma5",
+        "coef": 1.014248878633957
+      }
+    ]
+  },
+  "EEM": {
+    "ticker": "EEM",
+    "baseline_9": {
+      "r2": 0.6444128913224378,
+      "mae": 1.6330026810385052,
+      "n_features": 9
+    },
+    "enhanced_25": {
+      "r2": 0.6766123783817451,
+      "mae": 1.534257412253104,
+      "n_features": 25
+    },
+    "selected": {
+      "r2": 0.6766123783817451,
+      "mae": 1.534257412253104,
+      "n_features": 25
+    },
+    "selected_features": [
+      "RV_1d",
+      "RV_5d",
+      "RV_22d",
+      "VIX_lag1",
+      "VIX_lag5",
+      "VIX_change",
+      "CAVB_lag1",
+      "CAVB_lag5",
+      "CAVB_ma5",
+      "RV_10d",
+      "RV_std_22d",
+      "RV_momentum",
+      "RV_acceleration",
+      "VIX_lag10",
+      "VIX_lag22",
+      "VIX_ma5",
+      "VIX_ma22",
+      "VIX_zscore",
+      "CAVB_percentile",
+      "CAVB_std_22d",
+      "CAVB_max_22d",
+      "CAVB_min_22d",
+      "RV_VIX_ratio",
+      "RV_VIX_product",
+      "CAVB_VIX_ratio"
+    ],
+    "top_10_features": [
+      {
+        "feature": "VIX_ma22",
+        "coef": 3.491310607270591
+      },
+      {
+        "feature": "RV_22d",
+        "coef": 2.916791940679201
+      },
+      {
+        "feature": "RV_10d",
+        "coef": 1.8216865317050377
+      },
+      {
+        "feature": "CAVB_std_22d",
+        "coef": 1.596187236264366
+      },
+      {
+        "feature": "CAVB_lag1",
+        "coef": 1.5178596147088945
+      },
+      {
+        "feature": "VIX_lag10",
+        "coef": 1.3821369087113
+      },
+      {
+        "feature": "CAVB_max_22d",
+        "coef": 1.3457559557382286
+      },
+      {
+        "feature": "CAVB_min_22d",
+        "coef": 1.2813039152777126
+      },
+      {
+        "feature": "VIX_lag22",
+        "coef": 1.11309401021165
+      },
+      {
+        "feature": "VIX_change",
+        "coef": 0.8153696908307607
+      }
+    ]
+  }
+}

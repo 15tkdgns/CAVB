@@ -1,0 +1,17 @@
+{
+  "results": {
+    "ElasticNet": 0.149440496792153,
+    "Ridge": 0.14292391330487153,
+    "RandomForest": -0.07549430978375216,
+    "GradientBoosting": -0.032832209231233644,
+    "XGBoost": -0.00473792211097579,
+    "LightGBM": 0.007470543644628291,
+    "Ensemble": 0.1489414449061276
+  },
+  "best_model": "ElasticNet",
+  "best_r2": 0.149440496792153,
+  "baseline": 0.1323,
+  "improvement": 12.955779888248667,
+  "direction_accuracy": 0.7090909090909091,
+  "timestamp": "2025-12-12T23:23:15.421741"
+}

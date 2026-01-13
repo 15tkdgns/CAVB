@@ -1,0 +1,754 @@
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.0 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/root/workspace/vrp-prediction/experiments/08_ensemble/ensemble_strategies.py", line 16, in <module>
+    import pandas as pd
+  File "/usr/local/lib/python3.12/dist-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/arrays/arrow/array.py", line 53, in <module>
+    from pandas.core import (
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/ops/__init__.py", line 8, in <module>
+    from pandas.core.ops.array_ops import (
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/ops/array_ops.py", line 56, in <module>
+    from pandas.core.computation import expressions
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/computation/expressions.py", line 21, in <module>
+    from pandas.core.computation.check import NUMEXPR_INSTALLED
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/computation/check.py", line 5, in <module>
+    ne = import_optional_dependency("numexpr", errors="warn")
+  File "/usr/local/lib/python3.12/dist-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/lib/python3/dist-packages/numexpr/__init__.py", line 24, in <module>
+    from numexpr.interpreter import MAX_THREADS, use_vml, __BLOCK_SIZE1__
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.0 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.0 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+Traceback (most recent call last):  File "/root/workspace/vrp-prediction/experiments/08_ensemble/ensemble_strategies.py", line 16, in <module>
+    import pandas as pd
+  File "/usr/local/lib/python3.12/dist-packages/pandas/__init__.py", line 49, in <module>
+    from pandas.core.api import (
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/api.py", line 28, in <module>
+    from pandas.core.arrays import Categorical
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.arrow import ArrowExtensionArray
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/arrays/arrow/__init__.py", line 5, in <module>
+    from pandas.core.arrays.arrow.array import ArrowExtensionArray
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/arrays/arrow/array.py", line 67, in <module>
+    from pandas.core.arrays.masked import BaseMaskedArray
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/arrays/masked.py", line 61, in <module>
+    from pandas.core import (
+  File "/usr/local/lib/python3.12/dist-packages/pandas/core/nanops.py", line 52, in <module>
+    bn = import_optional_dependency("bottleneck", errors="warn")
+  File "/usr/local/lib/python3.12/dist-packages/pandas/compat/_optional.py", line 135, in import_optional_dependency
+    module = importlib.import_module(name)
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/usr/lib/python3/dist-packages/bottleneck/__init__.py", line 7, in <module>
+    from .move import (move_argmax, move_argmin, move_max, move_mean, move_median,
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/dist-packages/numpy/core/_multiarray_umath.py", line 46, in __getattr__
+    raise ImportError(msg)
+ImportError: 
+A module that was compiled using NumPy 1.x cannot be run in
+NumPy 2.4.0 as it may crash. To support both 1.x and 2.x
+versions of NumPy, modules must be compiled with NumPy 2.0.
+Some module may need to rebuild instead e.g. with 'pybind11>=2.12'.
+
+If you are a user of the module, the easiest solution will be to
+downgrade to 'numpy<2' or try to upgrade the affected module.
+We expect that some modules will need time to support NumPy 2.
+
+
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:39: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag10'] = df['VIX'].shift(10).fillna(method='bfill')
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:40: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag22'] = df['VIX'].shift(22).fillna(method='bfill')
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:39: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag10'] = df['VIX'].shift(10).fillna(method='bfill')
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:40: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag22'] = df['VIX'].shift(22).fillna(method='bfill')
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:39: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag10'] = df['VIX'].shift(10).fillna(method='bfill')
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:40: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag22'] = df['VIX'].shift(22).fillna(method='bfill')
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+
+======================================================================
+Ensemble Strategies: SPY
+======================================================================
+
+Split completed:
+  Train: 1490 samples (0 - 1490)
+  Val:   492 samples (1495 - 1987)
+  Test:  492 samples (1992 - 2484)
+  Gap:   5 days
+Training Base Models...
+  ElasticNet:    R² 0.7168
+  XGBoost:       R² 0.6546
+Training until validation scores don't improve for 20 rounds
+Early stopping, best iteration is:
+[85]	valid_0's l2: 7.38981
+  LightGBM:      R² 0.6619
+  Neural Net:    R² 0.6817
+  Random Forest: R² 0.6158
+
+======================================================================
+Strategy 1: Simple Averaging
+======================================================================
+  R²:  0.7035
+  MAE: 1.1342
+  vs Baseline: -1.85%
+
+======================================================================
+Strategy 2: Weighted Averaging (validation-based)
+======================================================================
+  Weights: EN=0.274, XGB=0.184, LGB=0.142, NN=0.267, RF=0.133
+  R²:  0.7136
+  MAE: 1.1182
+  vs Baseline: -0.44%
+
+======================================================================
+Strategy 3: Stacking Ensemble (Ridge meta-learner)
+======================================================================
+  R²:  0.6637
+  MAE: 1.2096
+  vs Baseline: -7.41%
+
+======================================================================
+Strategy 4: Voting Ensemble
+======================================================================
+  R²:  0.6973
+  MAE: 1.1543
+  vs Baseline: -2.72%
+
+======================================================================
+Strategy 5: Optimized Weighted Ensemble
+======================================================================
+  Best Weights: EN=0.60, XGB=0.10, LGB=0.10, NN=0.20, RF=0.00
+  R²:  0.7261
+  MAE: 1.0976
+  vs Baseline: +1.31%
+
+======================================================================
+Strategy 6: Selective Best (70% best model + 30% ensemble)
+======================================================================
+  Best Base Model: ElasticNet
+  R²:  0.7243
+  MAE: 1.1001
+  vs Baseline: +1.05%
+
+======================================================================
+ENSEMBLE COMPARISON
+======================================================================
+    Strategy       R²      MAE  vs_Baseline_%
+   Optimized 0.726129 1.097596       1.306515
+   Selective 0.724324 1.100109       1.054733
+Weighted_Avg 0.713585 1.118153      -0.443546
+  Simple_Avg 0.703525 1.134202      -1.846985
+      Voting 0.697287 1.154302      -2.717308
+    Stacking 0.663650 1.209555      -7.410224
+
+🏆 Best Strategy: Optimized (R² = 0.7261)
+
+======================================================================
+Ensemble Strategies: GLD
+======================================================================
+
+Split completed:
+  Train: 1490 samples (0 - 1490)
+  Val:   492 samples (1495 - 1987)
+  Test:  492 samples (1992 - 2484)
+  Gap:   5 days
+Training Base Models...
+  ElasticNet:    R² 0.8729
+  XGBoost:       R² 0.7901
+Training until validation scores don't improve for 20 rounds
+Early stopping, best iteration is:
+[57]	valid_0's l2: 5.72841
+  LightGBM:      R² 0.7963
+  Neural Net:    R² 0.8407
+  Random Forest: R² 0.8067
+
+======================================================================
+Strategy 1: Simple Averaging
+======================================================================
+  R²:  0.8503
+  MAE: 1.2578
+  vs Baseline: -2.59%
+
+======================================================================
+Strategy 2: Weighted Averaging (validation-based)
+======================================================================
+  Weights: EN=0.318, XGB=0.163, LGB=0.173, NN=0.206, RF=0.139
+  R²:  0.8598
+  MAE: 1.2159
+  vs Baseline: -1.50%
+
+======================================================================
+Strategy 3: Stacking Ensemble (Ridge meta-learner)
+======================================================================
+  R²:  0.8696
+  MAE: 1.1587
+  vs Baseline: -0.37%
+
+======================================================================
+Strategy 4: Voting Ensemble
+======================================================================
+  R²:  0.8543
+  MAE: 1.2469
+  vs Baseline: -2.13%
+
+======================================================================
+Strategy 5: Optimized Weighted Ensemble
+======================================================================
+  Best Weights: EN=0.60, XGB=0.10, LGB=0.10, NN=0.20, RF=0.00
+  R²:  0.8736
+  MAE: 1.1474
+  vs Baseline: +0.08%
+
+======================================================================
+Strategy 6: Selective Best (70% best model + 30% ensemble)
+======================================================================
+  Best Base Model: ElasticNet
+  R²:  0.8720
+  MAE: 1.1578
+  vs Baseline: -0.10%
+
+======================================================================
+ENSEMBLE COMPARISON
+======================================================================
+    Strategy       R²      MAE  vs_Baseline_%
+   Optimized 0.873597 1.147387       0.079608
+   Selective 0.872031 1.157830      -0.099829
+    Stacking 0.869634 1.158673      -0.374458
+Weighted_Avg 0.859816 1.215928      -1.499177
+      Voting 0.854341 1.246855      -2.126402
+  Simple_Avg 0.850255 1.257823      -2.594530
+
+🏆 Best Strategy: Optimized (R² = 0.8736)
+
+======================================================================
+Ensemble Strategies: TLT
+======================================================================
+
+Split completed:
+  Train: 1490 samples (0 - 1490)
+  Val:   492 samples (1495 - 1987)
+  Test:  492 samples (1992 - 2484)
+  Gap:   5 days
+Training Base Models...
+  ElasticNet:    R² 0.8367
+  XGBoost:       R² 0.6615
+Training until validation scores don't improve for 20 rounds
+Early stopping, best iteration is:
+[67]	valid_0's l2: 4.03958
+  LightGBM:      R² 0.6849
+  Neural Net:    R² 0.7914
+  Random Forest: R² 0.6758
+
+======================================================================
+Strategy 1: Simple Averaging
+======================================================================
+  R²:  0.7716
+  MAE: 1.5269
+  vs Baseline: -7.78%
+
+======================================================================
+Strategy 2: Weighted Averaging (validation-based)
+======================================================================
+  Weights: EN=0.219, XGB=0.225, LGB=0.213, NN=0.143, RF=0.199
+  R²:  0.7661
+  MAE: 1.5403
+  vs Baseline: -8.43%
+
+======================================================================
+Strategy 3: Stacking Ensemble (Ridge meta-learner)
+======================================================================
+  R²:  0.8198
+  MAE: 1.3596
+  vs Baseline: -2.02%
+
+======================================================================
+Strategy 4: Voting Ensemble
+======================================================================
+  R²:  0.7958
+  MAE: 1.4548
+  vs Baseline: -4.88%
+
+======================================================================
+Strategy 5: Optimized Weighted Ensemble
+======================================================================
+  Best Weights: EN=0.30, XGB=0.20, LGB=0.10, NN=0.20, RF=0.20
+  R²:  0.7883
+  MAE: 1.4739
+  vs Baseline: -5.78%
+
+======================================================================
+Strategy 6: Selective Best (70% best model + 30% ensemble)
+======================================================================
+  Best Base Model: ElasticNet
+  R²:  0.8279
+  MAE: 1.3309
+  vs Baseline: -1.05%
+
+======================================================================
+ENSEMBLE COMPARISON
+======================================================================
+    Strategy       R²      MAE  vs_Baseline_%
+   Selective 0.827869 1.330886      -1.053697
+    Stacking 0.819810 1.359636      -2.016879
+      Voting 0.795829 1.454838      -4.883076
+   Optimized 0.788308 1.473948      -5.781968
+  Simple_Avg 0.771624 1.526881      -7.776111
+Weighted_Avg 0.766115 1.540297      -8.434445
+
+🏆 Best Strategy: Selective (R² = 0.8279)
+
+======================================================================
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:39: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag10'] = df['VIX'].shift(10).fillna(method='bfill')
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:40: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag22'] = df['VIX'].shift(22).fillna(method='bfill')
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/neural_network/_multilayer_perceptron.py:781: ConvergenceWarning: Stochastic Optimizer: Maximum iterations (300) reached and the optimization hasn't converged yet.
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/loaders.py:21: FutureWarning: YF.download() has changed argument auto_adjust default to True
+  data = yf.download(ticker, start=start, end=end, progress=False)
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:39: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag10'] = df['VIX'].shift(10).fillna(method='bfill')
+/root/workspace/vrp-prediction/experiments/08_ensemble/../../src/data/preprocessors.py:40: FutureWarning: Series.fillna with 'method' is deprecated and will raise in a future version. Use obj.ffill() or obj.bfill() instead.
+  df['VIX_lag22'] = df['VIX'].shift(22).fillna(method='bfill')
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+/usr/local/lib/python3.12/dist-packages/sklearn/utils/validation.py:2749: UserWarning: X does not have valid feature names, but LGBMRegressor was fitted with feature names
+  warnings.warn(
+Ensemble Strategies: EFA
+======================================================================
+
+Split completed:
+  Train: 1490 samples (0 - 1490)
+  Val:   492 samples (1495 - 1987)
+  Test:  492 samples (1992 - 2484)
+  Gap:   5 days
+Training Base Models...
+  ElasticNet:    R² 0.7417
+  XGBoost:       R² 0.7350
+Training until validation scores don't improve for 20 rounds
+Early stopping, best iteration is:
+[43]	valid_0's l2: 5.87592
+  LightGBM:      R² 0.6909
+  Neural Net:    R² 0.6797
+  Random Forest: R² 0.7105
+
+======================================================================
+Strategy 1: Simple Averaging
+======================================================================
+  R²:  0.7572
+  MAE: 1.1907
+  vs Baseline: +2.08%
+
+======================================================================
+Strategy 2: Weighted Averaging (validation-based)
+======================================================================
+  Weights: EN=0.317, XGB=0.187, LGB=0.200, NN=0.144, RF=0.152
+  R²:  0.7588
+  MAE: 1.1956
+  vs Baseline: +2.30%
+
+======================================================================
+Strategy 3: Stacking Ensemble (Ridge meta-learner)
+======================================================================
+  R²:  0.7382
+  MAE: 1.3002
+  vs Baseline: -0.47%
+
+======================================================================
+Strategy 4: Voting Ensemble
+======================================================================
+  R²:  0.7541
+  MAE: 1.2130
+  vs Baseline: +1.66%
+
+======================================================================
+Strategy 5: Optimized Weighted Ensemble
+======================================================================
+  Best Weights: EN=0.60, XGB=0.10, LGB=0.10, NN=0.20, RF=0.00
+  R²:  0.7600
+  MAE: 1.2239
+  vs Baseline: +2.46%
+
+======================================================================
+Strategy 6: Selective Best (70% best model + 30% ensemble)
+======================================================================
+  Best Base Model: ElasticNet
+  R²:  0.7552
+  MAE: 1.2428
+  vs Baseline: +1.82%
+
+======================================================================
+ENSEMBLE COMPARISON
+======================================================================
+    Strategy       R²      MAE  vs_Baseline_%
+   Optimized 0.759978 1.223872       2.458673
+Weighted_Avg 0.758768 1.195614       2.295509
+  Simple_Avg 0.757179 1.190697       2.081240
+   Selective 0.755228 1.242771       1.818225
+      Voting 0.754059 1.212980       1.660675
+    Stacking 0.738249 1.300225      -0.470784
+
+🏆 Best Strategy: Optimized (R² = 0.7600)
+
+======================================================================
+Ensemble Strategies: EEM
+======================================================================
+
+Split completed:
+  Train: 1490 samples (0 - 1490)
+  Val:   492 samples (1495 - 1987)
+  Test:  492 samples (1992 - 2484)
+  Gap:   5 days
+Training Base Models...
+  ElasticNet:    R² 0.6941
+  XGBoost:       R² 0.5715
+Training until validation scores don't improve for 20 rounds
+Early stopping, best iteration is:
+[45]	valid_0's l2: 11.5481
+  LightGBM:      R² 0.5175
+  Neural Net:    R² 0.5180
+  Random Forest: R² 0.3246
+
+======================================================================
+Strategy 1: Simple Averaging
+======================================================================
+  R²:  0.6277
+  MAE: 1.6129
+  vs Baseline: -9.57%
+
+======================================================================
+Strategy 2: Weighted Averaging (validation-based)
+======================================================================
+  Weights: EN=0.328, XGB=0.232, LGB=0.190, NN=0.126, RF=0.123
+  R²:  0.6541
+  MAE: 1.5563
+  vs Baseline: -5.77%
+
+======================================================================
+Strategy 3: Stacking Ensemble (Ridge meta-learner)
+======================================================================
+  R²:  0.6856
+  MAE: 1.4888
+  vs Baseline: -1.23%
+
+======================================================================
+Strategy 4: Voting Ensemble
+======================================================================
+  R²:  0.6717
+  MAE: 1.5281
+  vs Baseline: -3.24%
+
+======================================================================
+Strategy 5: Optimized Weighted Ensemble
+======================================================================
+  Best Weights: EN=0.60, XGB=0.10, LGB=0.10, NN=0.20, RF=0.00
+  R²:  0.6923
+  MAE: 1.4795
+  vs Baseline: -0.27%
+
+======================================================================
+Strategy 6: Selective Best (70% best model + 30% ensemble)
+======================================================================
+  Best Base Model: ElasticNet
+  R²:  0.6998
+  MAE: 1.4688
+  vs Baseline: +0.82%
+
+======================================================================
+ENSEMBLE COMPARISON
+======================================================================
+    Strategy       R²      MAE  vs_Baseline_%
+   Selective 0.699819 1.468770       0.817955
+   Optimized 0.692293 1.479529      -0.266164
+    Stacking 0.685607 1.488772      -1.229453
+      Voting 0.671684 1.528097      -3.235161
+Weighted_Avg 0.654101 1.556342      -5.768291
+  Simple_Avg 0.627741 1.612919      -9.565721
+
+🏆 Best Strategy: Selective (R² = 0.6998)
+
+======================================================================
+FINAL SUMMARY - All Assets
+======================================================================
+
+SPY:
+  Baseline:      R² 0.7168
+  Best Strategy: Optimized
+  Best R²:       0.7261 (+1.31%)
+
+GLD:
+  Baseline:      R² 0.8729
+  Best Strategy: Optimized
+  Best R²:       0.8736 (+0.08%)
+
+TLT:
+  Baseline:      R² 0.8367
+  Best Strategy: Selective
+  Best R²:       0.8279 (-1.05%)
+
+EFA:
+  Baseline:      R² 0.7417
+  Best Strategy: Optimized
+  Best R²:       0.7600 (+2.46%)
+
+EEM:
+  Baseline:      R² 0.6941
+  Best Strategy: Selective
+  Best R²:       0.6998 (+0.82%)
+
+======================================================================
+Average Performance by Strategy
+======================================================================
+Simple_Avg           R²: 0.7421  (-3.93%)
+Weighted_Avg         R²: 0.7505  (-2.84%)
+Stacking             R²: 0.7554  (-2.21%)
+Voting               R²: 0.7546  (-2.31%)
+Optimized            R²: 0.7681  (-0.57%)
+Selective            R²: 0.7759  (+0.44%)
+
+Results saved to results/ensemble_strategies_results.json

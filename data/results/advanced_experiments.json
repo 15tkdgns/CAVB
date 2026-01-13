@@ -1,0 +1,129 @@
+{
+  "oos_test": {
+    "GLD": {
+      "train_r2": 0.6626938900089941,
+      "oos_r2": 0.27857225025906607,
+      "train_dir_acc": 0.819400983459991,
+      "oos_dir_acc": 0.6782608695652174,
+      "train_samples": 2237,
+      "oos_samples": 230
+    },
+    "SPY": {
+      "train_r2": 0.06583358372793913,
+      "oos_r2": 0.11879414196623372,
+      "train_dir_acc": 0.5391148860080465,
+      "oos_dir_acc": 0.6347826086956522,
+      "train_samples": 2237,
+      "oos_samples": 230
+    },
+    "EFA": {
+      "train_r2": 0.13324870068522976,
+      "oos_r2": 0.2571495660858274,
+      "train_dir_acc": 0.6450603486812696,
+      "oos_dir_acc": 0.6739130434782609,
+      "train_samples": 2237,
+      "oos_samples": 230
+    },
+    "EEM": {
+      "train_r2": 0.19556572268092576,
+      "oos_r2": -0.2840627027516094,
+      "train_dir_acc": 0.705409029950827,
+      "oos_dir_acc": 0.5695652173913044,
+      "train_samples": 2237,
+      "oos_samples": 230
+    }
+  },
+  "asset_expansion": {
+    "GLD": {
+      "name": "Gold",
+      "category": "Commodity",
+      "vix_rv_corr": 0.5141962111546095,
+      "r2": 0.36787069560425634,
+      "direction_acc": 0.7348178137651822
+    },
+    "SPY": {
+      "name": "S&P 500",
+      "category": "US Large",
+      "vix_rv_corr": 0.8282637656906442,
+      "r2": -0.0007602906114878571,
+      "direction_acc": 0.5526315789473685
+    },
+    "EFA": {
+      "name": "EAFE",
+      "category": "Developed",
+      "vix_rv_corr": 0.7498581315881636,
+      "r2": 0.29173943839119554,
+      "direction_acc": 0.7165991902834008
+    },
+    "EEM": {
+      "name": "Emerging",
+      "category": "Emerging",
+      "vix_rv_corr": 0.6874715490605853,
+      "r2": -0.26824886092206146,
+      "direction_acc": 0.6133603238866396
+    },
+    "IWM": {
+      "name": "Russell 2000",
+      "category": "US Small",
+      "vix_rv_corr": 0.7941278816763716,
+      "r2": -0.11116266441449651,
+      "direction_acc": 0.5587044534412956
+    },
+    "TLT": {
+      "name": "20Y Treasury",
+      "category": "Bond",
+      "vix_rv_corr": 0.5879670975253508,
+      "r2": 0.15631259625904037,
+      "direction_acc": 0.6356275303643725
+    },
+    "FXI": {
+      "name": "China",
+      "category": "Emerging",
+      "vix_rv_corr": 0.4576957784894118,
+      "r2": -0.3882379665417828,
+      "direction_acc": 0.6477732793522267
+    },
+    "EWJ": {
+      "name": "Japan",
+      "category": "Developed",
+      "vix_rv_corr": 0.6739773210734961,
+      "r2": 0.2725135076716114,
+      "direction_acc": 0.6740890688259109
+    }
+  },
+  "vix_beta_stats": {
+    "pearson_r": 0.08040051413360359,
+    "pearson_p": 0.8498974366734587,
+    "spearman_r": -0.023809523809523815,
+    "spearman_p": 0.9553740118158807,
+    "ci_lower": -0.8341067509826815,
+    "ci_upper": 0.7637832398141176,
+    "regression_slope": 0.16889806581862968,
+    "regression_intercept": -0.07175565093963147,
+    "regression_p": 0.8498974366734584,
+    "n_assets": 8,
+    "interpretation": "✗ 통계적으로 유의하지 않음"
+  },
+  "lstm": {
+    "lstm_r2": 0.40247720756450334,
+    "lstm_dir_acc": 0.7300613496932515,
+    "mlp_r2": 0.14737585222827854,
+    "mlp_dir_acc": 0.6748466257668712,
+    "improvement": 173.09576262268823,
+    "epochs_trained": 13
+  },
+  "macro_variables": {
+    "기본 (12개)": {
+      "r2": 0.3511120995305198,
+      "dir_acc": 0.7423312883435583,
+      "n_features": 12
+    },
+    "확장 (+거시)": {
+      "r2": 0.20333109266694394,
+      "dir_acc": 0.689161554192229,
+      "n_features": 14
+    },
+    "improvement": -42.08940878459538
+  },
+  "timestamp": "2026-01-06T16:13:22.146792"
+}

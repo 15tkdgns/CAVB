@@ -1,0 +1,217 @@
+{
+  "SPY": {
+    "ticker": "SPY",
+    "baseline": {
+      "r2": 0.6944126287606265,
+      "mae": 1.138363770878054
+    },
+    "regime": {
+      "r2": 0.6909478235177516,
+      "mae": 1.1517191075694377
+    },
+    "improvement": {
+      "r2_delta": -0.0034648052428748466,
+      "r2_pct": -0.4989548143815803,
+      "mae_delta": 0.013355336691383668
+    },
+    "regime_distribution": {
+      "mid": 1119,
+      "low": 1010,
+      "high": 355
+    },
+    "top_features": [
+      {
+        "feature": "RV_22d",
+        "coef": 4.281551538528714
+      },
+      {
+        "feature": "CAVB_ma5",
+        "coef": 2.3554154477869895
+      },
+      {
+        "feature": "CAVB_lag5",
+        "coef": 2.1731047338616545
+      },
+      {
+        "feature": "VIX_lag5",
+        "coef": 1.9763723213910862
+      },
+      {
+        "feature": "VIX_lag1",
+        "coef": 1.09092215140384
+      }
+    ]
+  },
+  "GLD": {
+    "ticker": "GLD",
+    "baseline": {
+      "r2": 0.8503758357551239,
+      "mae": 1.2622245971281334
+    },
+    "regime": {
+      "r2": 0.8512258105779678,
+      "mae": 1.2836642248374834
+    },
+    "improvement": {
+      "r2_delta": 0.0008499748228438797,
+      "r2_pct": 0.09995284286143935,
+      "mae_delta": 0.02143962770935004
+    },
+    "regime_distribution": {
+      "mid": 1119,
+      "low": 1010,
+      "high": 355
+    },
+    "top_features": [
+      {
+        "feature": "VIX_lag1",
+        "coef": 2.3717478405974597
+      },
+      {
+        "feature": "RV_22d",
+        "coef": 2.1605887644881063
+      },
+      {
+        "feature": "CAVB_ma5",
+        "coef": 1.6785195710221934
+      },
+      {
+        "feature": "regime_high",
+        "coef": 1.606536655696765
+      },
+      {
+        "feature": "VIX_lag5",
+        "coef": 1.4720463924401224
+      }
+    ]
+  },
+  "TLT": {
+    "ticker": "TLT",
+    "baseline": {
+      "r2": 0.7896303317060874,
+      "mae": 1.5294115809327944
+    },
+    "regime": {
+      "r2": 0.7819924033234921,
+      "mae": 1.5353695681687878
+    },
+    "improvement": {
+      "r2_delta": -0.00763792838259536,
+      "r2_pct": -0.9672790008069643,
+      "mae_delta": 0.005957987235993389
+    },
+    "regime_distribution": {
+      "mid": 1119,
+      "low": 1010,
+      "high": 355
+    },
+    "top_features": [
+      {
+        "feature": "RV_22d",
+        "coef": 4.090392211393189
+      },
+      {
+        "feature": "VIX_lag5",
+        "coef": 3.9363948373479225
+      },
+      {
+        "feature": "VIX_lag1",
+        "coef": 2.9490041912103906
+      },
+      {
+        "feature": "CAVB_lag5",
+        "coef": 2.14936064204056
+      },
+      {
+        "feature": "regime_high",
+        "coef": 1.5098269021050117
+      }
+    ]
+  },
+  "EFA": {
+    "ticker": "EFA",
+    "baseline": {
+      "r2": 0.7232190069588902,
+      "mae": 1.2629592087451285
+    },
+    "regime": {
+      "r2": 0.7301196918431216,
+      "mae": 1.2456796862636232
+    },
+    "improvement": {
+      "r2_delta": 0.006900684884231456,
+      "r2_pct": 0.9541625452086144,
+      "mae_delta": -0.017279522481505216
+    },
+    "regime_distribution": {
+      "mid": 1119,
+      "low": 1010,
+      "high": 355
+    },
+    "top_features": [
+      {
+        "feature": "RV_22d",
+        "coef": 4.262155749554252
+      },
+      {
+        "feature": "VIX_lag5",
+        "coef": 2.0785372816961747
+      },
+      {
+        "feature": "VIX_lag1",
+        "coef": 1.8697070500274484
+      },
+      {
+        "feature": "CAVB_lag5",
+        "coef": 1.7991622292363338
+      },
+      {
+        "feature": "CAVB_ma5",
+        "coef": 1.649083061324268
+      }
+    ]
+  },
+  "EEM": {
+    "ticker": "EEM",
+    "baseline": {
+      "r2": 0.6443805719092199,
+      "mae": 1.6331014464253821
+    },
+    "regime": {
+      "r2": 0.6226944535058709,
+      "mae": 1.684249944334636
+    },
+    "improvement": {
+      "r2_delta": -0.021686118403348997,
+      "r2_pct": -3.365420893913007,
+      "mae_delta": 0.0511484979092538
+    },
+    "regime_distribution": {
+      "mid": 1119,
+      "low": 1010,
+      "high": 355
+    },
+    "top_features": [
+      {
+        "feature": "RV_22d",
+        "coef": 5.128945046150047
+      },
+      {
+        "feature": "regime_high",
+        "coef": 2.2190917068280696
+      },
+      {
+        "feature": "VIX_lag1",
+        "coef": 2.1987578440132864
+      },
+      {
+        "feature": "CAVB_lag5",
+        "coef": 2.066594148704394
+      },
+      {
+        "feature": "CAVB_ma5",
+        "coef": 1.9466067203931046
+      }
+    ]
+  }
+}

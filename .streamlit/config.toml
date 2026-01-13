@@ -1,0 +1,6 @@
+# Force Streamlit to use pip and requirements.txt
+# This prevents poetry from being used even if pyproject.toml exists in git history
+
+[server]
+enableCORS = false
+enableXsrfProtection = true

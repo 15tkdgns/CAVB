@@ -1,0 +1,48 @@
+{
+  "description": "HAR-RV Benchmark Comparison (5-day prediction)",
+  "methodology": {
+    "models": {
+      "HAR-RV": "Linear(RV_1d, RV_5d, RV_22d)",
+      "HAR-RV+VIX": "Linear(HAR + VIX_lag1, VIX_change)",
+      "CAVB": "ElasticNet(RV + VIX + CAVB, 9 features)"
+    },
+    "split": "60/20/20",
+    "gap": 5,
+    "statistical_test": "Paired t-test"
+  },
+  "results": [
+    {
+      "asset": "GLD",
+      "asset_name": "Gold (금)",
+      "n_samples": 2484,
+      "train_size": 1490,
+      "val_size": 492,
+      "test_size": 492,
+      "results": {
+        "HAR-RV": {
+          "model": "HAR-RV (Linear)",
+          "features": "RV_1d, RV_5d, RV_22d",
+          "n_features": 3,
+          "r2_test": 0.8551866212091868,
+          "mae_test": 1.2137471633430406
+        },
+        "HAR-RV+VIX": {
+          "model": "HAR-RV + VIX",
+          "features": "RV_1d, RV_5d, RV_22d, VIX_lag1, VIX_change",
+          "n_features": 5,
+          "r2_test": 0.8569861969551333,
+          "mae_test": 1.2187278209949202,
+          "improvement_over_har": 0.00179957574594658
+        },
+        "CAVB": {
+          "model": "CAVB (ElasticNet)",
+          "features": "RV + VIX + CAVB (9 features)",
+          "n_features": 9,
+          "r2_test": 0.857024334349342,
+          "mae_test": 1.2213826412689792,
+          "improvement_over_har_vix": 3.813739420865936e-05
+        },
+        "statistical_test": {
+          "t_statistic": 0.05763740523227946,
+          "p_value": 0.9540609023917557,
+          "significant": 
