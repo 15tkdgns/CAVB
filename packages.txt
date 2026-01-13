@@ -1,2 +1,0 @@
-# This file forces Streamlit Cloud to use pip instead of poetry
-# Even if pyproject.toml exists in git history, this takes precedence
