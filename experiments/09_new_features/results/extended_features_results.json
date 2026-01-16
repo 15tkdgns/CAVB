@@ -1,0 +1,323 @@
+{
+  "timestamp": "2026-01-15T22:09:33.714492",
+  "data_info": {
+    "rows": 3495,
+    "date_range": "2011-02-02 00:00:00 to 2024-12-20 00:00:00"
+  },
+  "feature_counts": {
+    "base": 9,
+    "extended": 15,
+    "new": 21,
+    "total": 45
+  },
+  "experiments": {
+    "base_only": {
+      "model": "ElasticNet",
+      "n_features": 9,
+      "features": [
+        "RV_1d",
+        "RV_5d",
+        "RV_22d",
+        "VIX_lag1",
+        "VIX_lag5",
+        "VIX_change",
+        "CAVB_lag1",
+        "CAVB_lag5",
+        "CAVB_ma5"
+      ],
+      "train_r2": 0.644281442653106,
+      "test_r2": 0.4018900362344683,
+      "test_mae": 2.114458281947959,
+      "direction_accuracy": 0.8798283261802575,
+      "importance": {
+        "RV_1d": 0.048660997508486174,
+        "RV_5d": 0.937944647195946,
+        "RV_22d": 4.250400074902775,
+        "VIX_lag1": 0.5918995993490588,
+        "VIX_lag5": 2.7719986439497775,
+        "VIX_change": 0.20680115232737206,
+        "CAVB_lag1": 0.48316131061956985,
+        "CAVB_lag5": 1.9681777419939306,
+        "CAVB_ma5": 1.9897517974011538
+      }
+    },
+    "base_extended": {
+      "model": "ElasticNet",
+      "n_features": 24,
+      "features": [
+        "RV_1d",
+        "RV_5d",
+        "RV_22d",
+        "VIX_lag1",
+        "VIX_lag5",
+        "VIX_change",
+        "CAVB_lag1",
+        "CAVB_lag5",
+        "CAVB_ma5",
+        "RV_10d",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "CAVB_percentile",
+        "RV_VIX_ratio",
+        "RV_VIX_product",
+        "CAVB_VIX_ratio",
+        "VRP_persistent",
+        "VRP_transitory"
+      ],
+      "train_r2": 0.7198428689818255,
+      "test_r2": 0.46153076866788945,
+      "test_mae": 1.993074830731655,
+      "direction_accuracy": 0.8855507868383404,
+      "importance": {
+        "RV_1d": 0.11698887540578896,
+        "RV_5d": 0.0,
+        "RV_22d": 0.6722780642591374,
+        "VIX_lag1": 0.26150919624457597,
+        "VIX_lag5": 0.5734141294689689,
+        "VIX_change": 0.3488805392530265,
+        "CAVB_lag1": 0.04006008023660636,
+        "CAVB_lag5": 0.0,
+        "CAVB_ma5": 0.0,
+        "RV_10d": 1.6089409134713648,
+        "VIX_lag10": 1.08120239320692,
+        "VIX_lag22": 0.7472945193320382,
+        "VIX_ma5": 0.0,
+        "VIX_ma22": 1.7734971447567227,
+        "VIX_zscore": 0.5569102050880161,
+        "CAVB_std_22d": 0.18301419180650053,
+        "CAVB_max_22d": 0.06626704238214433,
+        "CAVB_min_22d": 0.04297612715070744,
+        "CAVB_percentile": 0.0,
+        "RV_VIX_ratio": 0.5325554625286771,
+        "RV_VIX_product": 0.5366426786903545,
+        "CAVB_VIX_ratio": 0.5415016813149537,
+        "VRP_persistent": 1.5444826268724148,
+        "VRP_transitory": 2.2025211407916134
+      }
+    },
+    "all_features": {
+      "model": "ElasticNet",
+      "n_features": 45,
+      "features": [
+        "RV_1d",
+        "RV_5d",
+        "RV_22d",
+        "VIX_lag1",
+        "VIX_lag5",
+        "VIX_change",
+        "CAVB_lag1",
+        "CAVB_lag5",
+        "CAVB_ma5",
+        "RV_10d",
+        "VIX_lag10",
+        "VIX_lag22",
+        "VIX_ma5",
+        "VIX_ma22",
+        "VIX_zscore",
+        "CAVB_std_22d",
+        "CAVB_max_22d",
+        "CAVB_min_22d",
+        "CAVB_percentile",
+        "RV_VIX_ratio",
+        "RV_VIX_product",
+        "CAVB_VIX_ratio",
+        "VRP_persistent",
+        "VRP_transitory",
+        "VIX_term_structure",
+        "VIX_contango",
+        "TLT_vol_5d",
+        "TLT_vol_22d",
+        "USD_strength",
+        "RSI_14",
+        "MACD",
+        "MACD_signal",
+        "MACD_histogram",
+        "BB_width",
+        "BB_position",
+        "momentum_10d",
+        "momentum_22d",
+        "gold_equity_corr",
+        "gold_outperformance",
+        "bond_equity_corr",
+        "risk_on_off",
+        "sector_dispersion",
+        "VIX_percentile",
+        "vol_regime",
+        "regime_duration"
+      ],
+      "train_r2": 0.741502874898681,
+      "test_r2": 0.40562049483862295,
+      "test_mae": 2.1764899156752224,
+      "direction_accuracy": 0.882689556509299,
+      "importance": {
+        "RV_1d": 0.11755922305634615,
+        "RV_5d": 0.04404655407738358,
+        "RV_22d": 1.63610722294903,
+        "VIX_lag1": 0.272560192499799,
+        "VIX_lag5": 0.16630689367126636,
+        "VIX_change": 0.1964052068543108,
+        "CAVB_lag1": 0.0,
+        "CAVB_lag5": 0.08146831913653471,
+        "CAVB_ma5": 0.18616324350822253,
+        "RV_10d": 1.497914643435678,
+        "VIX_lag10": 0.5716399042715086,
+        "VIX_lag22": 0.2562312433203378,
+        "VIX_ma5": 0.0,
+        "VIX_ma22": 1.4184058207711268,
+        "VIX_zscore": 0.2463407783364371,
+        "CAVB_std_22d": 0.059833835896858624,
+        "CAVB_max_22d": 0.3064445881432455,
+        "CAVB_min_22d": 0.0,
+        "CAVB_percentile": 0.3650187747386414,
+        "RV_VIX_ratio": 0.6161716238938137,
+        "RV_VIX_product": 0.776170043464498,
+        "CAVB_VIX_ratio": 0.6070315593116468,
+        "VRP_persistent": 1.4557273991696682,
+        "VRP_transitory": 1.9259757833232338,
+        "VIX_term_structure": 0.38133113312049827,
+        "VIX_contango": 0.8706844720630271,
+        "TLT_vol_5d": 0.4261901229134085,
+        "TLT_vol_22d": 0.4126594743060841,
+        "USD_strength": 0.0,
+        "RSI_14": 0.18878311478096257,
+        "MACD": 0.0,
+        "MACD_signal": 0.41370661965024075,
+        "MACD_histogram": 0.1982568527170313,
+        "BB_width": 0.2275536306695968,
+        "BB_position": 0.702914964561514,
+        "momentum_10d": 0.30850258982442796,
+        "momentum_22d": 0.3204840620883801,
+        "gold_equity_corr": 0.0,
+        "gold_outperformance": 0.0,
+        "bond_equity_corr": 0.10471667429876443,
+        "risk_on_off": 0.0,
+        "sector_dispersion": 0.12810786745083763,
+        "VIX_percentile": 0.5432199693890621,
+        "vol_regime": 0.32019234813553704,
+        "regime_duration": 0.014086872083437422
+      }
+    },
+    "model_comparison": {
+      "ElasticNet": {
+        "test_r2": 0.40562049483862295,
+        "test_mae": 2.1764899156752224,
+        "direction_accuracy": 0.882689556509299
+      },
+      "Lasso": {
+        "test_r2": 0.40942994204003347,
+        "test_mae": 2.1638604431578377,
+        "direction_accuracy": 0.8812589413447782
+      },
+      "Ridge": {
+        "test_r2": 0.4036922861484499,
+        "test_mae": 2.1830987374407402,
+        "direction_accuracy": 0.871244635193133
+      },
+      "RandomForest": {
+        "test_r2": 0.2982053040728553,
+        "test_mae": 2.434882516805926,
+        "direction_accuracy": 0.8812589413447782
+      },
+      "GradientBoosting": {
+        "test_r2": 0.2783705366758198,
+        "test_mae": 2.4510219960721926,
+        "direction_accuracy": 0.8626609442060086
+      },
+      "MLP": {
+        "test_r2": -0.44386147831048306,
+        "test_mae": 3.4700060739524425,
+        "direction_accuracy": 0.8354792560801144
+      }
+    }
+  },
+  "feature_importance": {
+    "mutual_info": [
+      {
+        "feature": "CAVB_VIX_ratio",
+        "score": 0.35234800878012607
+      },
+      {
+        "feature": "RV_VIX_ratio",
+        "score": 0.3523438246153443
+      },
+      {
+        "feature": "RV_22d",
+        "score": 0.3518356532753213
+      },
+      {
+        "feature": "CAVB_lag1",
+        "score": 0.31294822101564623
+      },
+      {
+        "feature": "CAVB_ma5",
+        "score": 0.31217983459653276
+      },
+      {
+        "feature": "MACD_signal",
+        "score": 0.28698433391415
+      },
+      {
+        "feature": "CAVB_min_22d",
+        "score": 0.2790384771842591
+      },
+      {
+        "feature": "VIX_ma22",
+        "score": 0.27872415832535147
+      },
+      {
+        "feature": "CAVB_max_22d",
+        "score": 0.27751720553830683
+      },
+      {
+        "feature": "RV_VIX_product",
+        "score": 0.26537851184572414
+      },
+      {
+        "feature": "RV_10d",
+        "score": 0.25797617362055547
+      },
+      {
+        "feature": "CAVB_percentile",
+        "score": 0.25106123938320657
+      },
+      {
+        "feature": "BB_width",
+        "score": 0.23177769269120052
+      },
+      {
+        "feature": "VRP_transitory",
+        "score": 0.22916542211214264
+      },
+      {
+        "feature": "CAVB_std_22d",
+        "score": 0.20860577375251932
+      },
+      {
+        "feature": "VIX_lag5",
+        "score": 0.2055251913281131
+      },
+      {
+        "feature": "VIX_ma5",
+        "score": 0.20304053250192222
+      },
+      {
+        "feature": "MACD",
+        "score": 0.20007474088209243
+      },
+      {
+        "feature": "VIX_lag1",
+        "score": 0.17234788595646489
+      },
+      {
+        "feature": "RV_5d",
+        "score": 0.16642430977252776
+      }
+    ]
+  }
+}
