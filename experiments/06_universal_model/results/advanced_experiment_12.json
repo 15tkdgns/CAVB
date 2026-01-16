@@ -1,0 +1,30 @@
+{
+  "exp": "Exp12_Interaction",
+  "results": {
+    "SPY": {
+      "baseline": 0.7318709868501642,
+      "interaction": 0.7323956136677376,
+      "improvement": 0.07168296421086141
+    },
+    "GLD": {
+      "baseline": 0.8543635382254583,
+      "interaction": 0.8527676748451885,
+      "improvement": -0.1867897339795783
+    },
+    "TLT": {
+      "baseline": 0.8107552997639641,
+      "interaction": 0.8052783322069728,
+      "improvement": -0.6755389152048535
+    },
+    "EFA": {
+      "baseline": 0.7639069292916635,
+      "interaction": 0.7640108867996996,
+      "improvement": 0.013608661480862816
+    },
+    "EEM": {
+      "baseline": 0.7205267475013564,
+      "interaction": 0.7302259625207125,
+      "improvement": 1.3461283780221986
+    }
+  }
+}

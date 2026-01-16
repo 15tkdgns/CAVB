@@ -16,19 +16,19 @@ def render_overview():
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        st.metric("평균 Test R²", "0.769", "+4.9% vs HAR-RV")
+        st.metric("평균 Test R²", "0.789", "+2.7% vs ElasticNet")
     
     with col2:
         st.metric("최적 예측 기간", "5일", "+717% vs 22일")
     
     with col3:
-        st.metric("최적 모델", "ElasticNet", "+30% vs Stacking")
+        st.metric("최적 모델", "Huber-Tuned", "40+ 모델 비교")
     
     with col4:
-        st.metric("Feature 수", "29개", "또는 RFE 15")
+        st.metric("Feature 수", "13개", "핵심 변수만")
     
     with col5:
-        st.metric("검증 통과", "6/6", "Leakage Tests")
+        st.metric("실험 수", "12개", "총 40+ 모델")
     
     st.markdown("---")
     

@@ -1,0 +1,106 @@
+{
+  "experiment": "Exp11_Advanced_Features",
+  "results": {
+    "SPY": {
+      "n_features": 57,
+      "baseline": 0.6297957824516093,
+      "all_features": 0.4198581476203642,
+      "top20_features": 0.1266753050160243,
+      "top20_list": [
+        "CAVB",
+        "CAVB_lag1",
+        "CAVB_ma5",
+        "ATR",
+        "DXY_ma22",
+        "RV_22d",
+        "RV_66d",
+        "US10Y_ma22",
+        "RV_spread_TLT",
+        "RV_spread_GLD"
+      ],
+      "top30_features": 0.46705215236769404
+    },
+    "GLD": {
+      "n_features": 57,
+      "baseline": 0.9146354685024201,
+      "all_features": 0.8831043166806759,
+      "top20_features": 0.9085900622017731,
+      "top20_list": [
+        "CAVB",
+        "CAVB_lag1",
+        "CAVB_ma5",
+        "RV_spread_SPY",
+        "CAVB_lag5",
+        "CAVB_ma22",
+        "VIX",
+        "RV_high_22d",
+        "RV_low_22d",
+        "US10Y_ma22"
+      ],
+      "top30_features": 0.9047760456201124
+    },
+    "TLT": {
+      "n_features": 57,
+      "baseline": 0.8671484978933649,
+      "all_features": 0.830909264721349,
+      "top20_features": 0.7431747220769014,
+      "top20_list": [
+        "CAVB",
+        "CAVB_lag1",
+        "CAVB_ma5",
+        "VIX",
+        "RV_spread_SPY",
+        "CAVB_ma22",
+        "VIX3M",
+        "CAVB_lag5",
+        "VIX_ma5",
+        "VIX_lag1"
+      ],
+      "top30_features": 0.765515011891645
+    },
+    "EFA": {
+      "n_features": 59,
+      "baseline": 0.650878335995745,
+      "all_features": 0.17646813246351278,
+      "top20_features": 0.45944688794774324,
+      "top20_list": [
+        "CAVB",
+        "CAVB_lag1",
+        "CAVB_ma5",
+        "RV_high_22d",
+        "RV_22d",
+        "RV_66d",
+        "RV_spread_SPY",
+        "RV_low_22d",
+        "RV_10d",
+        "US10Y_ma22"
+      ],
+      "top30_features": 0.3351345600839738
+    },
+    "EEM": {
+      "n_features": 59,
+      "baseline": 0.7826240142437968,
+      "all_features": 0.7252414478594391,
+      "top20_features": 0.6718095942249324,
+      "top20_list": [
+        "CAVB",
+        "CAVB_lag1",
+        "CAVB_ma5",
+        "RV_spread_SPY",
+        "RV_high_22d",
+        "RV_22d",
+        "RV_spread_TLT",
+        "RV_66d",
+        "US10Y_ma22",
+        "RV_low_22d"
+      ],
+      "top30_features": 0.7158980900123466
+    }
+  },
+  "summary": {
+    "baseline_avg": 0.7690164198173873,
+    "all_features_avg": 0.6071162618690682,
+    "top20_avg": 0.5819393142934749,
+    "top30_avg": 0.6376751719951543
+  }
+}

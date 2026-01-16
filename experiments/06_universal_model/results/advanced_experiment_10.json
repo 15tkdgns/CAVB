@@ -1,0 +1,149 @@
+{
+  "experiment": "Exp10_Intensive_Tuning",
+  "n_trials": 100,
+  "results": {
+    "SPY": {
+      "huber_baseline": 0.7484002215090062,
+      "svr_baseline": 0.7464829886767097,
+      "huber_tuned": 0.7533062815695495,
+      "huber_params": {
+        "epsilon": 1.8392878512083985,
+        "alpha": 0.09839960288207815
+      },
+      "svr_tuned": 0.7523603120735931,
+      "svr_params": {
+        "C": 0.016222697160333237,
+        "epsilon": 0.35867080323031003
+      },
+      "elasticnet_tuned": 0.7417281465603416,
+      "elasticnet_params": {
+        "alpha": 0.12299515090540983,
+        "l1_ratio": 0.997814127407083
+      },
+      "ensemble_avg": 0.7556484355510003,
+      "ensemble_weighted": 0.7556665057013607,
+      "ensemble_weights": [
+        0.33224341181255196,
+        0.3359739962470895,
+        0.3317825919403584
+      ]
+    },
+    "GLD": {
+      "huber_baseline": 0.8677668358713817,
+      "svr_baseline": 0.8666720790686484,
+      "huber_tuned": 0.8706320290678748,
+      "huber_params": {
+        "epsilon": 1.991220425793979,
+        "alpha": 0.09979475734617896
+      },
+      "svr_tuned": 0.8658455514525225,
+      "svr_params": {
+        "C": 0.8148062717198911,
+        "epsilon": 0.0010185164580449033
+      },
+      "elasticnet_tuned": 0.8704703710853525,
+      "elasticnet_params": {
+        "alpha": 0.03774045345725091,
+        "l1_ratio": 0.9963848829597226
+      },
+      "ensemble_avg": 0.8694563423610271,
+      "ensemble_weighted": 0.8694559189454163,
+      "ensemble_weights": [
+        0.333033793997393,
+        0.3334434046696413,
+        0.33352280133296575
+      ]
+    },
+    "TLT": {
+      "huber_baseline": 0.8265286834525724,
+      "svr_baseline": 0.8262194474932391,
+      "huber_tuned": 0.8279079484638036,
+      "huber_params": {
+        "epsilon": 1.013416402350727,
+        "alpha": 1.5024481907942356e-06
+      },
+      "svr_tuned": 0.8253581825998704,
+      "svr_params": {
+        "C": 0.03891111455596941,
+        "epsilon": 0.0010701683189141414
+      },
+      "elasticnet_tuned": 0.7788279476276642,
+      "elasticnet_params": {
+        "alpha": 0.3937959602332859,
+        "l1_ratio": 0.9991779452234171
+      },
+      "ensemble_avg": 0.8209825029159106,
+      "ensemble_weighted": 0.821033568624187,
+      "ensemble_weights": [
+        0.3330133323195026,
+        0.3352493449772394,
+        0.33173732270325795
+      ]
+    },
+    "EFA": {
+      "huber_baseline": 0.7727683555123226,
+      "svr_baseline": 0.775862003188571,
+      "huber_tuned": 0.7749090093266187,
+      "huber_params": {
+        "epsilon": 1.0038225594713985,
+        "alpha": 1.2121832536486599e-06
+      },
+      "svr_tuned": 0.7748897048460286,
+      "svr_params": {
+        "C": 57.02591985444003,
+        "epsilon": 0.0010069733343186112
+      },
+      "elasticnet_tuned": 0.7679394598809343,
+      "elasticnet_params": {
+        "alpha": 0.033728483467168335,
+        "l1_ratio": 0.08348186839094726
+      },
+      "ensemble_avg": 0.776151219452353,
+      "ensemble_weighted": 0.7761607640868617,
+      "ensemble_weights": [
+        0.3365066461682292,
+        0.33651552425304215,
+        0.32697782957872873
+      ]
+    },
+    "EEM": {
+      "huber_baseline": 0.709527699345532,
+      "svr_baseline": 0.71042456404663,
+      "huber_tuned": 0.7165291099104205,
+      "huber_params": {
+        "epsilon": 1.2469230673812866,
+        "alpha": 0.008321467663662855
+      },
+      "svr_tuned": 0.718307576638532,
+      "svr_params": {
+        "C": 2.5238619402812636,
+        "epsilon": 0.7240504922700141
+      },
+      "elasticnet_tuned": 0.6885150741124673,
+      "elasticnet_params": {
+        "alpha": 0.04724026680194263,
+        "l1_ratio": 0.8189454983245806
+      },
+      "ensemble_avg": 0.7119503939782263,
+      "ensemble_weighted": 0.7121357821190566,
+      "ensemble_weights": [
+        0.33721253861859285,
+        0.33765596864772934,
+        0.3251314927336778
+      ]
+    }
+  },
+  "summary": {
+    "best_model": "huber_tuned",
+    "best_avg_r2": 0.7886568756676533,
+    "model_averages": {
+      "huber_baseline": 0.784998359138163,
+      "svr_baseline": 0.7851322164947596,
+      "huber_tuned": 0.7886568756676533,
+      "svr_tuned": 0.7873522655221092,
+      "elasticnet_tuned": 0.769496199853352,
+      "ensemble_avg": 0.7868377788517035,
+      "ensemble_weighted": 0.7868905078953765
+    }
+  }
+}

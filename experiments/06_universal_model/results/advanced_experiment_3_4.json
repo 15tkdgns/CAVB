@@ -1,0 +1,82 @@
+{
+  "experiment": "Exp3_Exp4_Ensemble_StrongLGBM",
+  "results": {
+    "SPY": {
+      "asset_type": "equity",
+      "elastic_r2": 0.7101393611369375,
+      "ridge_r2": 0.6981167269112134,
+      "gbr_r2": 0.6478556982733041,
+      "ensemble_r2": 0.7060033248508422,
+      "ensemble_weights": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "strong_reg_lgbm_r2": 0.6068158782053992,
+      "lgbm_best_iter": 99
+    },
+    "GLD": {
+      "asset_type": "commodity",
+      "elastic_r2": 0.8744084602162638,
+      "ridge_r2": 0.8732106493749313,
+      "gbr_r2": 0.8528657631767641,
+      "ensemble_r2": 0.8736333493292338,
+      "ensemble_weights": [
+        0.5,
+        0.4,
+        0.1
+      ],
+      "strong_reg_lgbm_r2": 0.842510605715203,
+      "lgbm_best_iter": 160
+    },
+    "TLT": {
+      "asset_type": "bond",
+      "elastic_r2": 0.8259986261119772,
+      "ridge_r2": 0.8242017152122977,
+      "gbr_r2": 0.5839883234378711,
+      "ensemble_r2": 0.8105596978672608,
+      "ensemble_weights": [
+        0.4,
+        0.4,
+        0.2
+      ],
+      "strong_reg_lgbm_r2": 0.6648301670840506,
+      "lgbm_best_iter": 114
+    },
+    "EFA": {
+      "asset_type": "emerging",
+      "elastic_r2": 0.7559169165557494,
+      "ridge_r2": 0.7520826532470929,
+      "gbr_r2": 0.737948571237536,
+      "ensemble_r2": 0.7613992410560754,
+      "ensemble_weights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "strong_reg_lgbm_r2": 0.7132998057193801,
+      "lgbm_best_iter": 167
+    },
+    "EEM": {
+      "asset_type": "emerging",
+      "elastic_r2": 0.670438990247366,
+      "ridge_r2": 0.6679198456059744,
+      "gbr_r2": 0.6196651535793081,
+      "ensemble_r2": 0.6622531970460852,
+      "ensemble_weights": [
+        0.3,
+        0.3,
+        0.4
+      ],
+      "strong_reg_lgbm_r2": 0.5442365210877307,
+      "lgbm_best_iter": 170
+    }
+  },
+  "summary": {
+    "avg_elastic_r2": 0.7673804708536588,
+    "avg_ensemble_r2": 0.7627697620298995,
+    "avg_strong_lgbm_r2": 0.6743385955623526,
+    "ensemble_improvement_pct": -0.6008373940804286,
+    "lgbm_improvement_pct": -12.12460817354439
+  }
+}

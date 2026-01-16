@@ -1,0 +1,255 @@
+{
+  "experiment": "B2_D3_CrossAsset_LightGBM",
+  "results": {
+    "SPY": {
+      "baseline_r2": 0.6434047184387507,
+      "lgbm_r2": 0.5713540863129624,
+      "improvement_pct": -11.19833754104606,
+      "best_iteration": 50,
+      "n_features": 26,
+      "top_features": [
+        [
+          "CAVB",
+          204
+        ],
+        [
+          "RV_corr_TLT",
+          106
+        ],
+        [
+          "CAVB_lag5",
+          101
+        ],
+        [
+          "RV_corr_GLD",
+          69
+        ],
+        [
+          "RV_22d",
+          62
+        ],
+        [
+          "RV_corr_EFA",
+          62
+        ],
+        [
+          "VIX_lag5",
+          61
+        ],
+        [
+          "RV_corr_EEM",
+          59
+        ],
+        [
+          "RV_spread_EEM",
+          57
+        ],
+        [
+          "CAVB_lag1",
+          55
+        ]
+      ]
+    },
+    "GLD": {
+      "baseline_r2": 0.8491193751413254,
+      "lgbm_r2": 0.8165627323459106,
+      "improvement_pct": -3.834165577719407,
+      "best_iteration": 50,
+      "n_features": 26,
+      "top_features": [
+        [
+          "CAVB",
+          303
+        ],
+        [
+          "VIX",
+          91
+        ],
+        [
+          "RV_corr_TLT",
+          81
+        ],
+        [
+          "RV_corr_SPY",
+          79
+        ],
+        [
+          "RV_lag1_SPY",
+          70
+        ],
+        [
+          "RV_spread_SPY",
+          67
+        ],
+        [
+          "RV_spread_EFA",
+          63
+        ],
+        [
+          "RV_lag1_EFA",
+          61
+        ],
+        [
+          "RV_5d",
+          57
+        ],
+        [
+          "CAVB_lag1",
+          57
+        ]
+      ]
+    },
+    "TLT": {
+      "baseline_r2": 0.8042982484339982,
+      "lgbm_r2": 0.5526219836455395,
+      "improvement_pct": -31.291410279517923,
+      "best_iteration": 36,
+      "n_features": 26,
+      "top_features": [
+        [
+          "CAVB",
+          289
+        ],
+        [
+          "VIX",
+          75
+        ],
+        [
+          "RV_spread_EFA",
+          50
+        ],
+        [
+          "CAVB_lag1",
+          47
+        ],
+        [
+          "RV_spread_SPY",
+          45
+        ],
+        [
+          "RV_corr_GLD",
+          44
+        ],
+        [
+          "CAVB_ma5",
+          43
+        ],
+        [
+          "RV_5d",
+          41
+        ],
+        [
+          "RV_corr_EFA",
+          38
+        ],
+        [
+          "CAVB_lag5",
+          37
+        ]
+      ]
+    },
+    "EFA": {
+      "baseline_r2": 0.6141056630615653,
+      "lgbm_r2": 0.6998189378641335,
+      "improvement_pct": 13.957414816084388,
+      "best_iteration": 107,
+      "n_features": 26,
+      "top_features": [
+        [
+          "CAVB",
+          253
+        ],
+        [
+          "RV_spread_SPY",
+          233
+        ],
+        [
+          "RV_corr_SPY",
+          162
+        ],
+        [
+          "RV_vs_avg",
+          159
+        ],
+        [
+          "RV_5d",
+          158
+        ],
+        [
+          "RV_spread_GLD",
+          147
+        ],
+        [
+          "RV_corr_TLT",
+          138
+        ],
+        [
+          "RV_corr_GLD",
+          136
+        ],
+        [
+          "CAVB_lag5",
+          133
+        ],
+        [
+          "RV_lag1_GLD",
+          132
+        ]
+      ]
+    },
+    "EEM": {
+      "baseline_r2": 0.5618004939208168,
+      "lgbm_r2": 0.5982959489726483,
+      "improvement_pct": 6.496159303301603,
+      "best_iteration": 140,
+      "n_features": 26,
+      "top_features": [
+        [
+          "CAVB",
+          270
+        ],
+        [
+          "RV_spread_SPY",
+          254
+        ],
+        [
+          "RV_corr_SPY",
+          249
+        ],
+        [
+          "RV_5d",
+          215
+        ],
+        [
+          "CAVB_lag5",
+          203
+        ],
+        [
+          "RV_corr_GLD",
+          189
+        ],
+        [
+          "VIX",
+          182
+        ],
+        [
+          "RV_corr_EFA",
+          176
+        ],
+        [
+          "RV_lag1_GLD",
+          171
+        ],
+        [
+          "RV_corr_TLT",
+          169
+        ]
+      ]
+    }
+  },
+  "summary": {
+    "avg_baseline_r2": 0.6945456997992914,
+    "avg_lgbm_r2": 0.6477307378282389,
+    "avg_improvement_pct": -6.740371725659091
+  }
+}

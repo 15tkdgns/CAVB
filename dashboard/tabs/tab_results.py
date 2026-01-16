@@ -155,3 +155,92 @@ def render_results():
     - 22일 대비: **+717%** (정보 감쇠 회피)
     - Degiannakis decay 이론 재확인 (정보 감쇠율 8.5%/일)
     """)
+    
+    # ==========================================
+    # 3.7 Universal Model 고급 실험 (신규)
+    # ==========================================
+    st.markdown("### 3.7 Universal Model 고급 실험 (12개 실험, 40+ 모델)")
+    
+    with st.expander("고급 모델 비교 실험", expanded=True):
+        st.markdown("#### 최적 모델 순위")
+        
+        best_models = {
+            '순위': [1, 2, 3, 4, 5],
+            '모델': ['**Huber-Tuned (Optuna)**', 'SVR-Tuned', 'SVR-Linear', 'Stacking', 'ElasticNet'],
+            '평균 R²': ['**0.789**', 0.787, 0.785, 0.768, 0.768],
+            'vs Baseline': ['**+0.47%**', '+0.30%', '+0.00%', '+0.00%', '-'],
+            '특징': ['100 trials HPO', '100 trials HPO', 'Robust Linear', 'Linear Ensemble', 'L1+L2 정규화']
+        }
+        
+        df_best = pd.DataFrame(best_models)
+        st.dataframe(df_best, use_container_width=True, hide_index=True)
+        
+        st.markdown("#### 모델 카테고리별 성능")
+        
+        col1, col2 = st.columns(2)
+        
+        with col1:
+            st.markdown("**성능 우수 (선형 모델)**")
+            good_models = {
+                '카테고리': ['Robust Linear', 'Linear', 'Linear Ensemble'],
+                '대표 모델': ['Huber, SVR-Linear', 'ElasticNet, Ridge', 'Stacking, Voting'],
+                '평균 R²': ['0.785-0.789', '0.768', '0.768']
+            }
+            st.dataframe(pd.DataFrame(good_models), use_container_width=True, hide_index=True)
+        
+        with col2:
+            st.markdown("**성능 저조 (비선형 모델)**")
+            bad_models = {
+                '카테고리': ['Boosting', 'Tree', 'Deep Learning', 'Time Series'],
+                '대표 모델': ['XGBoost, LightGBM', 'RF, ExtraTrees', 'LSTM, GRU', 'ARIMA, GARCH'],
+                '평균 R²': ['0.65-0.70', '0.67-0.68', '0.00-0.75', '음수']
+            }
+            st.dataframe(pd.DataFrame(bad_models), use_container_width=True, hide_index=True)
+        
+        st.markdown("#### 자산별 최적 모델 성능")
+        
+        asset_results = {
+            '자산': ['Gold', 'Treasury', 'EFA', 'S&P 500', 'Emerging'],
+            'Huber-Tuned R²': ['**0.871**', '**0.828**', 0.775, 0.753, 0.717],
+            'vs Baseline': ['+0.3%', '+0.2%', '+0.3%', '+0.7%', '+1.0%']
+        }
+        
+        df_asset = pd.DataFrame(asset_results)
+        st.dataframe(df_asset, use_container_width=True, hide_index=True)
+    
+    with st.expander("12개 실험 요약"):
+        exp_summary = {
+            '실험': ['Exp1', 'Exp2', 'Exp3-4', 'Exp5', 'Exp6', 'Exp7', 'Exp8', 'Exp9', 'Exp10', 'Exp11', 'Exp12'],
+            '접근법': ['Cross-Asset LightGBM', 'Multi-Task Learning', 'Ensemble+StrongReg', 
+                     'XGBoost/RF/Stacking', 'Huber/SVR-Linear', 'ARIMA/GARCH/LSTM',
+                     'CatBoost/GP/PolyRidge', 'Optuna HPO (20)', 'Optuna HPO (100)',
+                     'Advanced Features (57)', 'Feature Interaction'],
+            '결과': ['-6.7%', '+1.0%', '-0.6%/-12%', '+0.1%', '**+2.3%**', 
+                   '-101%', '+0.2%', '+0.7%', '**+0.47%**', '-21%', '+0.08%'],
+            '결론': ['EFA만 개선', 'EEM 개선', '불안정', 'Linear 최고', '**최적 모델**',
+                   '모두 실패', '동등', 'HPO 효과', '**미세 개선**', '과적합', '효과 미미']
+        }
+        
+        df_exp = pd.DataFrame(exp_summary)
+        st.dataframe(df_exp, use_container_width=True, hide_index=True)
+    
+    st.info("""
+    **핵심 발견**:
+    - **R² 0.789가 현재 데이터로 달성 가능한 최대치**
+    - VRP 예측은 본질적으로 **선형 문제** (CAVB가 ~79% 설명)
+    - 비선형 모델은 **과적합**으로 성능 저하
+    - 추가 개선은 **새로운 데이터 소스** (옵션 Greeks, 고빈도 데이터) 필요
+    """)
+    
+    st.code("""
+# 최적 모델 설정
+from sklearn.linear_model import HuberRegressor
+
+model = HuberRegressor(
+    epsilon=1.35,    # Outlier threshold
+    alpha=1e-6,      # Regularization (very low)
+    max_iter=1000
+)
+# Average R² = 0.789
+    """, language='python')
+

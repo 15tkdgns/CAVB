@@ -1,0 +1,60 @@
+{
+  "experiment": "Exp8_Comprehensive_Final",
+  "catboost_available": true,
+  "results": {
+    "SPY": {
+      "elasticnet": 0.7115674811760939,
+      "hist_gradient_boosting": 0.6073903865987857,
+      "catboost": 0.6613094524605909,
+      "polynomial_ridge": 0.7046804831067414,
+      "gaussian_process": 0.05175934445978314,
+      "quantile_rf": 0.6264097771201864,
+      "optimized_blend": 0.7324687264755845,
+      "blend_weights": "{'elastic': 3.418636951650121, 'histgb': 0.06547032849244834, 'ridge': -2.4841072801425694}"
+    },
+    "GLD": {
+      "elasticnet": 0.8742774132412738,
+      "hist_gradient_boosting": 0.836836767494231,
+      "catboost": 0.8517250017013784,
+      "polynomial_ridge": 0.8646305717064822,
+      "gaussian_process": 0.6666755659406118,
+      "quantile_rf": 0.8404884864316561,
+      "optimized_blend": 0.8726180276409897,
+      "blend_weights": "{'elastic': 3.2901392439033517, 'histgb': 0.09906984914257802, 'ridge': -2.3892090930459293}"
+    },
+    "TLT": {
+      "elasticnet": 0.8255046395054616,
+      "hist_gradient_boosting": 0.6834454176822113,
+      "catboost": 0.6445638254060806,
+      "polynomial_ridge": 0.7918261002822361,
+      "gaussian_process": 0.6447354969690806,
+      "quantile_rf": 0.6126715629121098,
+      "optimized_blend": 0.8104278989890338,
+      "blend_weights": "{'elastic': 1.7276129649007896, 'histgb': 0.2818911674281782, 'ridge': -1.0095041323289675}"
+    },
+    "EFA": {
+      "elasticnet": 0.7563137264662536,
+      "hist_gradient_boosting": 0.733758234437696,
+      "catboost": 0.7391140406516263,
+      "polynomial_ridge": 0.7371674129205341,
+      "gaussian_process": 0.4005728533847889,
+      "quantile_rf": 0.7166335349366761,
+      "optimized_blend": 0.7627648866823113,
+      "blend_weights": "{'elastic': 1.1363012704486048, 'histgb': 0.34716981694330123, 'ridge': -0.48347108739190625}"
+    },
+    "EEM": {
+      "elasticnet": 0.6707943554627747,
+      "hist_gradient_boosting": 0.6012600956593195,
+      "catboost": 0.6192143271732895,
+      "polynomial_ridge": 0.6642078421749,
+      "gaussian_process": 0.17832784366524312,
+      "quantile_rf": 0.5505139420351886,
+      "optimized_blend": 0.6670083178892571,
+      "blend_weights": "{'elastic': 2.2625163870118024, 'histgb': 0.2832747191930883, 'ridge': -1.5457911062048906}"
+    }
+  },
+  "summary": {
+    "best_model": "optimized_blend",
+    "best_avg_r2": 0.7690575715354353
+  }
+}
