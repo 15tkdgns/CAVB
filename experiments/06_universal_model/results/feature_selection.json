@@ -1,0 +1,136 @@
+{
+  "experiment": "Exp16_Feature_Selection",
+  "method": "ElasticNet L1 regularization",
+  "results": {
+    "SPY": {
+      "n_core": 10,
+      "n_selected": 15,
+      "r2_core": 0.65457160333829,
+      "r2_selected": 0.6806793514269254,
+      "improvement": 3.9885243960304497,
+      "selected_features": [
+        "RV_5d",
+        "RV_22d",
+        "VIX_lag5",
+        "CAVB",
+        "CAVB_lag5",
+        "RV_5d_lag",
+        "VIX_term",
+        "SKEW",
+        "SKEW_zscore",
+        "US10Y",
+        "DXY",
+        "DXY_momentum",
+        "VIX_OVX_ratio",
+        "Ret_lag1",
+        "Ret_22d"
+      ]
+    },
+    "GLD": {
+      "n_core": 10,
+      "n_selected": 12,
+      "r2_core": 0.8843656546922994,
+      "r2_selected": 0.8603189863043851,
+      "improvement": -2.7190866425360003,
+      "selected_features": [
+        "RV_5d",
+        "VIX",
+        "VIX_ma22",
+        "VIX_change",
+        "CAVB",
+        "CAVB_ma5",
+        "RV_5d_lag",
+        "VIX_term",
+        "SKEW_zscore",
+        "Credit_spread",
+        "VIX_OVX_ratio",
+        "Ret_22d"
+      ]
+    },
+    "TLT": {
+      "n_core": 10,
+      "n_selected": 13,
+      "r2_core": 0.7287011507956391,
+      "r2_selected": 0.7189826944390381,
+      "improvement": -1.333668314643099,
+      "selected_features": [
+        "RV_5d",
+        "RV_22d",
+        "VIX_ma22",
+        "VIX_change",
+        "CAVB",
+        "CAVB_ma5",
+        "RV_5d_lag",
+        "VIX_term",
+        "US10Y",
+        "US10Y_change",
+        "DXY_momentum",
+        "Credit_spread",
+        "RSI"
+      ]
+    },
+    "EFA": {
+      "n_core": 10,
+      "n_selected": 13,
+      "r2_core": 0.6943152557355876,
+      "r2_selected": 0.6867618500090413,
+      "improvement": -1.0878928072153442,
+      "selected_features": [
+        "RV_5d",
+        "RV_22d",
+        "VIX_lag5",
+        "VIX_ma22",
+        "CAVB",
+        "CAVB_lag5",
+        "RV_5d_lag",
+        "SKEW",
+        "SKEW_zscore",
+        "US10Y",
+        "DXY",
+        "DXY_momentum",
+        "RSI"
+      ]
+    },
+    "EEM": {
+      "n_core": 10,
+      "n_selected": 15,
+      "r2_core": 0.5758775517461097,
+      "r2_selected": 0.5110435208441384,
+      "improvement": -11.258301474921009,
+      "selected_features": [
+        "RV_5d",
+        "RV_22d",
+        "VIX_lag5",
+        "CAVB",
+        "CAVB_lag5",
+        "RV_5d_lag",
+        "SKEW",
+        "SKEW_zscore",
+        "US10Y",
+        "DXY",
+        "DXY_momentum",
+        "VIX_OVX_ratio",
+        "Ret_lag1",
+        "Ret_22d",
+        "RSI"
+      ]
+    }
+  },
+  "summary": {
+    "avg_core": 0.7075662432615852,
+    "avg_selected": 0.6915572806047058,
+    "improvement_pct": -2.262539063916449,
+    "new_important_features": {
+      "RV_5d_lag": 5,
+      "SKEW_zscore": 4,
+      "US10Y": 4,
+      "DXY_momentum": 4,
+      "VIX_term": 3,
+      "SKEW": 3,
+      "DXY": 3,
+      "VIX_OVX_ratio": 3,
+      "Ret_22d": 3,
+      "RSI": 3
+    }
+  }
+}

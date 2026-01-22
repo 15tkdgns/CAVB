@@ -1,0 +1,65 @@
+{
+  "experiment": "Exp13_Hybrid_HAR_ElasticNet",
+  "methodology": "Two-stage: OLS (own-vol) + ElasticNet (spillovers)",
+  "reference": "Gong et al. (2025)",
+  "results": {
+    "SPY": {
+      "baseline_elasticnet": 0.6932184370380462,
+      "step1_ols_only": 0.09126822361486986,
+      "hybrid": 0.6844971041120645,
+      "persistence": -0.3172636982446214,
+      "nonzero_spillovers": 6,
+      "total_spillovers": 8,
+      "sparsity_rate": 75.0,
+      "improvement_vs_baseline": -1.2580930425402108
+    },
+    "GLD": {
+      "baseline_elasticnet": 0.8454390523134957,
+      "step1_ols_only": -0.555841150920366,
+      "hybrid": 0.8318805152810712,
+      "persistence": 0.057850855149525225,
+      "nonzero_spillovers": 8,
+      "total_spillovers": 8,
+      "sparsity_rate": 100.0,
+      "improvement_vs_baseline": -1.603727317223202
+    },
+    "TLT": {
+      "baseline_elasticnet": 0.810314246206088,
+      "step1_ols_only": -1.23768580563058,
+      "hybrid": 0.7930529134506105,
+      "persistence": -0.07905603978540471,
+      "nonzero_spillovers": 8,
+      "total_spillovers": 8,
+      "sparsity_rate": 100.0,
+      "improvement_vs_baseline": -2.1302023056234773
+    },
+    "EFA": {
+      "baseline_elasticnet": 0.7279429584986876,
+      "step1_ols_only": 0.015089823147687476,
+      "hybrid": 0.7175318243642692,
+      "persistence": -0.2828530364869023,
+      "nonzero_spillovers": 8,
+      "total_spillovers": 8,
+      "sparsity_rate": 100.0,
+      "improvement_vs_baseline": -1.4302129051279475
+    },
+    "EEM": {
+      "baseline_elasticnet": 0.6620445636799424,
+      "step1_ols_only": 0.07763067851994787,
+      "hybrid": 0.6465419225526452,
+      "persistence": -0.32976148854970366,
+      "nonzero_spillovers": 7,
+      "total_spillovers": 8,
+      "sparsity_rate": 87.5,
+      "improvement_vs_baseline": -2.3416310589617235
+    }
+  },
+  "summary": {
+    "baseline_avg": 0.747791851547252,
+    "hybrid_avg": 0.7347008559521321,
+    "improvement_pct": -1.750620251883387,
+    "avg_persistence": -0.19021668158342137,
+    "avg_active_spillovers": 7.4,
+    "avg_sparsity_rate": 92.5
+  }
+}

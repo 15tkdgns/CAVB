@@ -50,9 +50,7 @@ def render_references():
             
             **총 10개 글로벌 주식지수, 약 20년의 일간 고빈도 자료**
             
-            **실현 변동성(RV) 계산
-
-**:
+            **실현 변동성(RV) 계산**:
             - 일일 실현 변동성은 고빈도 수익률(5분, 10분 주기)로부터 계산
             - 여러 시간 범위: 1일, 5일 평균, 22일 평균
             
@@ -591,6 +589,141 @@ def render_references():
                 "year": "2017",
                 "volume": "125(3)",
                 "doi": "https://doi.org/10.1086/691450"
+            },
+            {
+                "title": "Variance risk premiums",
+                "authors": "Carr, P., & Wu, L.",
+                "journal": "The Review of Financial Studies",
+                "year": "2009",
+                "volume": "22(3)",
+                "doi": "https://doi.org/10.1093/rfs/hhn038"
+            },
+            {
+                "title": "Tails, fears, and risk premia",
+                "authors": "Bollerslev, T., & Todorov, V.",
+                "journal": "The Journal of Finance",
+                "year": "2011",
+                "volume": "66(6)",
+                "doi": "https://doi.org/10.1111/j.1540-6261.2011.01695.x"
+            },
+            {
+                "title": "Variance risk premium and stock return predictability in G7 countries",
+                "authors": "Zhou, H.",
+                "journal": "Journal of International Money and Finance",
+                "year": "2018",
+                "volume": "87",
+                "doi": "https://doi.org/10.1016/j.jimonfin.2018.05.004"
+            },
+            {
+                "title": "The cross-section of volatility and expected returns",
+                "authors": "Ang, A., Hodrick, R. J., Xing, Y., & Zhang, X.",
+                "journal": "The Journal of Finance",
+                "year": "2006",
+                "volume": "61(1)",
+                "doi": "https://doi.org/10.1111/j.1540-6261.2006.00836.x"
+            },
+            {
+                "title": "Volatility is rough",
+                "authors": "Gatheral, J., Jaisson, T., & Rosenbaum, M.",
+                "journal": "Quantitative Finance",
+                "year": "2018",
+                "volume": "18(6)",
+                "doi": "https://doi.org/10.1080/14697688.2017.1393551"
+            },
+            {
+                "title": "Forecasting stock market volatility: A new measure",
+                "authors": "Andersen, T. G., & Bollerslev, T.",
+                "journal": "Journal of Financial Economics",
+                "year": "1998",
+                "volume": "52(2)",
+                "doi": "https://doi.org/10.1016/S0304-405X(98)00045-9"
+            },
+            {
+                "title": "Understanding the role of volatility in forecasting stock returns",
+                "authors": "Christiansen, C., Schmeling, M., & Schrimpf, A.",
+                "journal": "Journal of Banking & Finance",
+                "year": "2012",
+                "volume": "36(12)",
+                "doi": "https://doi.org/10.1016/j.jbankfin.2012.08.004"
+            },
+            {
+                "title": "The variance premium and implied volatility in a no-arbitrage framework",
+                "authors": "Chen, R., & Yang, C.",
+                "journal": "Journal of Derivatives",
+                "year": "2013",
+                "volume": "20(4)",
+                "doi": "https://doi.org/10.3905/jod.2013.20.4.060"
+            },
+            {
+                "title": "Machine learning and the cross-section of volatility risk premia",
+                "authors": "Kelly, B., Palhares, D., & Pruitt, S.",
+                "journal": "Journal of Financial Economics",
+                "year": "2024",
+                "volume": "155",
+                "doi": "https://doi.org/10.1016/j.jfineco.2023.103791"
+            },
+            {
+                "title": "Volatility Spillovers in High-Dimensional Financial Systems",
+                "authors": "Gong, X., et al.",
+                "journal": "arXiv preprint",
+                "year": "2025",
+                "doi": "https://arxiv.org/html/2601.03146v1"
+            },
+            {
+                "title": "EMAT: Enhanced Multi-Aspect Attention Transformer for Financial Time Series Prediction",
+                "authors": "Chen, Y., et al.",
+                "journal": "PMC",
+                "year": "2025",
+                "doi": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12563745/"
+            },
+            {
+                "title": "Realised Volatility Forecasting: Machine Learning via NLP Models and Word Embeddings",
+                "authors": "Papadimitriou, T., et al.",
+                "journal": "arXiv preprint (v5)",
+                "year": "2025",
+                "doi": "https://arxiv.org/html/2108.00480v5"
+            },
+            {
+                "title": "Cross-Market Volatility Forecasting with Attention-Based Spatial-Temporal Graph Convolutional Networks",
+                "authors": "Gong, X., et al.",
+                "journal": "International Review of Financial Analysis",
+                "year": "2025",
+                "doi": "https://www.sciencedirect.com/science/article/abs/pii/S0927539825000611"
+            },
+            {
+                "title": "Feature Selection with Annealing for Forecasting Financial Time Series",
+                "authors": "Chen, L., et al.",
+                "journal": "arXiv preprint",
+                "year": "2023",
+                "doi": "https://arxiv.org/abs/2303.02223v3"
+            },
+            {
+                "title": "Confident Risk Premiums and Investments using Machine Learning Uncertainties",
+                "authors": "Allen, D., et al.",
+                "journal": "Auckland Centre for Financial Research",
+                "year": "2024",
+                "doi": "https://acfr.aut.ac.nz"
+            },
+            {
+                "title": "Volatility Forecasting and Assessing Risk of Financial Markets using Advanced Deep Learning",
+                "authors": "Wang, J., et al.",
+                "journal": "Expert Systems with Applications",
+                "year": "2024",
+                "doi": "https://www.sciencedirect.com"
+            },
+            {
+                "title": "Spreading of Cross-Market Volatility Information: Evidence from Multiplex Network Analysis of Spillovers",
+                "authors": "Liu, Z., et al.",
+                "journal": "Journal of International Financial Markets, Institutions and Money",
+                "year": "2023",
+                "doi": "https://www.sciencedirect.com"
+            },
+            {
+                "title": "Elastic Net Regression for Time Series Forecasting in Finance",
+                "authors": "Various Authors",
+                "journal": "Multiple Sources (AlphaArchitect, ScienceDirect)",
+                "year": "2022-2025",
+                "doi": "Multiple"
             }
         ]
         

@@ -1,0 +1,296 @@
+{
+  "experiment": "Exp20_Asset_Search",
+  "model": "Ensemble_Specialist + Ridge",
+  "assets_tested": 18,
+  "predictable_count": 10,
+  "results": {
+    "SLV": {
+      "name": "Silver",
+      "ensemble_r2": 0.32088253284379986,
+      "ridge_r2": 0.35016930478984454,
+      "best_r2": 0.35016930478984454,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "USO": {
+      "name": "Oil",
+      "ensemble_r2": 0.03101580402055437,
+      "ridge_r2": -0.02365726054977335,
+      "best_r2": 0.03101580402055437,
+      "n_samples": 3479,
+      "predictable": false
+    },
+    "DBA": {
+      "name": "Agriculture",
+      "ensemble_r2": 0.5975668503991143,
+      "ridge_r2": 0.6491376040104522,
+      "best_r2": 0.6491376040104522,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "UNG": {
+      "name": "NaturalGas",
+      "ensemble_r2": -0.883183459289065,
+      "ridge_r2": -1.0479794909536335,
+      "best_r2": -0.883183459289065,
+      "n_samples": 3479,
+      "predictable": false
+    },
+    "IEF": {
+      "name": "7-10Y Treasury",
+      "ensemble_r2": 0.7890869937291933,
+      "ridge_r2": 0.756535785758179,
+      "best_r2": 0.7890869937291933,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "HYG": {
+      "name": "High Yield",
+      "ensemble_r2": 0.5643785665792489,
+      "ridge_r2": 0.4537066964825569,
+      "best_r2": 0.5643785665792489,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "LQD": {
+      "name": "Investment Grade",
+      "ensemble_r2": 0.5023204978835683,
+      "ridge_r2": 0.2712258936762295,
+      "best_r2": 0.5023204978835683,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "TIP": {
+      "name": "TIPS",
+      "ensemble_r2": 0.8158315234387588,
+      "ridge_r2": 0.7381661553132195,
+      "best_r2": 0.8158315234387588,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "XLF": {
+      "name": "Financials",
+      "ensemble_r2": -0.40014423276943223,
+      "ridge_r2": -0.6368439238703005,
+      "best_r2": -0.40014423276943223,
+      "n_samples": 3479,
+      "predictable": false
+    },
+    "XLE": {
+      "name": "Energy",
+      "ensemble_r2": 0.10088920679370383,
+      "ridge_r2": 0.04033986326172634,
+      "best_r2": 0.10088920679370383,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "XLK": {
+      "name": "Technology",
+      "ensemble_r2": -0.5285811589596334,
+      "ridge_r2": -0.4205501028962251,
+      "best_r2": -0.4205501028962251,
+      "n_samples": 3479,
+      "predictable": false
+    },
+    "XLU": {
+      "name": "Utilities",
+      "ensemble_r2": 0.18576315063341442,
+      "ridge_r2": 0.10000246949433211,
+      "best_r2": 0.18576315063341442,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "VWO": {
+      "name": "Emerging All",
+      "ensemble_r2": -0.19992584119207502,
+      "ridge_r2": -0.15057039835577735,
+      "best_r2": -0.15057039835577735,
+      "n_samples": 3479,
+      "predictable": false
+    },
+    "FXI": {
+      "name": "China",
+      "ensemble_r2": -0.5117049027196261,
+      "ridge_r2": -0.4696218395221863,
+      "best_r2": -0.4696218395221863,
+      "n_samples": 3479,
+      "predictable": false
+    },
+    "EWJ": {
+      "name": "Japan",
+      "ensemble_r2": 0.4200493547068652,
+      "ridge_r2": 0.4668810650543007,
+      "best_r2": 0.4668810650543007,
+      "n_samples": 3479,
+      "predictable": true
+    },
+    "EWZ": {
+      "name": "Brazil",
+      "ensemble_r2": -0.21537892169054396,
+      "ridge_r2": -0.3637238017663478,
+      "best_r2": -0.21537892169054396,
+      "n_samples": 3479,
+      "predictable": false
+    },
+    "VNQ": {
+      "name": "Real Estate",
+      "ensemble_r2": -0.031062343784758584,
+      "ridge_r2": -0.054411092982486364,
+      "best_r2": -0.031062343784758584,
+      "n_samples": 3479,
+      "predictable": false
+    },
+    "BND": {
+      "name": "Total Bond",
+      "ensemble_r2": 0.7027601511073451,
+      "ridge_r2": 0.4510385937209418,
+      "best_r2": 0.7027601511073451,
+      "n_samples": 3479,
+      "predictable": true
+    }
+  },
+  "predictable_assets": [
+    {
+      "ticker": "TIP",
+      "name": "TIPS",
+      "r2": 0.8158315234387588
+    },
+    {
+      "ticker": "IEF",
+      "name": "7-10Y Treasury",
+      "r2": 0.7890869937291933
+    },
+    {
+      "ticker": "BND",
+      "name": "Total Bond",
+      "r2": 0.7027601511073451
+    },
+    {
+      "ticker": "DBA",
+      "name": "Agriculture",
+      "r2": 0.6491376040104522
+    },
+    {
+      "ticker": "HYG",
+      "name": "High Yield",
+      "r2": 0.5643785665792489
+    },
+    {
+      "ticker": "LQD",
+      "name": "Investment Grade",
+      "r2": 0.5023204978835683
+    },
+    {
+      "ticker": "EWJ",
+      "name": "Japan",
+      "r2": 0.4668810650543007
+    },
+    {
+      "ticker": "SLV",
+      "name": "Silver",
+      "r2": 0.35016930478984454
+    },
+    {
+      "ticker": "XLU",
+      "name": "Utilities",
+      "r2": 0.18576315063341442
+    },
+    {
+      "ticker": "XLE",
+      "name": "Energy",
+      "r2": 0.10088920679370383
+    }
+  ],
+  "ranking": [
+    {
+      "rank": 1,
+      "ticker": "TIP",
+      "best_r2": 0.8158315234387588
+    },
+    {
+      "rank": 2,
+      "ticker": "IEF",
+      "best_r2": 0.7890869937291933
+    },
+    {
+      "rank": 3,
+      "ticker": "BND",
+      "best_r2": 0.7027601511073451
+    },
+    {
+      "rank": 4,
+      "ticker": "DBA",
+      "best_r2": 0.6491376040104522
+    },
+    {
+      "rank": 5,
+      "ticker": "HYG",
+      "best_r2": 0.5643785665792489
+    },
+    {
+      "rank": 6,
+      "ticker": "LQD",
+      "best_r2": 0.5023204978835683
+    },
+    {
+      "rank": 7,
+      "ticker": "EWJ",
+      "best_r2": 0.4668810650543007
+    },
+    {
+      "rank": 8,
+      "ticker": "SLV",
+      "best_r2": 0.35016930478984454
+    },
+    {
+      "rank": 9,
+      "ticker": "XLU",
+      "best_r2": 0.18576315063341442
+    },
+    {
+      "rank": 10,
+      "ticker": "XLE",
+      "best_r2": 0.10088920679370383
+    },
+    {
+      "rank": 11,
+      "ticker": "USO",
+      "best_r2": 0.03101580402055437
+    },
+    {
+      "rank": 12,
+      "ticker": "VNQ",
+      "best_r2": -0.031062343784758584
+    },
+    {
+      "rank": 13,
+      "ticker": "VWO",
+      "best_r2": -0.15057039835577735
+    },
+    {
+      "rank": 14,
+      "ticker": "EWZ",
+      "best_r2": -0.21537892169054396
+    },
+    {
+      "rank": 15,
+      "ticker": "XLF",
+      "best_r2": -0.40014423276943223
+    },
+    {
+      "rank": 16,
+      "ticker": "XLK",
+      "best_r2": -0.4205501028962251
+    },
+    {
+      "rank": 17,
+      "ticker": "FXI",
+      "best_r2": -0.4696218395221863
+    },
+    {
+      "rank": 18,
+      "ticker": "UNG",
+      "best_r2": -0.883183459289065
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "experiment": "Exp15_Extended_Features",
+  "description": "Macro, options, cross-asset, and technical features",
+  "results": {
+    "SPY": {
+      "n_baseline": 13,
+      "n_extended": 43,
+      "r2_baseline": 0.6466144102704876,
+      "r2_extended": 0.2250511717689333,
+      "improvement": -65.19545989165454,
+      "top_features": [
+        "ATR_pct",
+        "Ret_22d",
+        "VIX3M",
+        "Ret_momentum",
+        "CAVB",
+        "US10Y",
+        "VIX_ma22",
+        "RV_22d",
+        "US10Y_ma22",
+        "OVX"
+      ]
+    },
+    "GLD": {
+      "n_baseline": 13,
+      "n_extended": 43,
+      "r2_baseline": 0.8896488281191981,
+      "r2_extended": 0.8607061813122215,
+      "improvement": -3.2532664453865525,
+      "top_features": [
+        "LQD",
+        "HYG",
+        "Ret_momentum",
+        "Ret_22d",
+        "Credit_spread",
+        "CAVB",
+        "VIX",
+        "US10Y",
+        "US10Y_ma22",
+        "ATR"
+      ]
+    },
+    "TLT": {
+      "n_baseline": 13,
+      "n_extended": 43,
+      "r2_baseline": 0.7289395658509552,
+      "r2_extended": 0.454938756275571,
+      "improvement": -37.58896106229589,
+      "top_features": [
+        "Ret_22d",
+        "Ret_momentum",
+        "VIX3M",
+        "ATR_pct",
+        "US10Y",
+        "US10Y_ma22",
+        "RV_22d",
+        "LQD",
+        "CAVB",
+        "HYG"
+      ]
+    },
+    "EFA": {
+      "n_baseline": 13,
+      "n_extended": 43,
+      "r2_baseline": 0.6901175437218583,
+      "r2_extended": 0.32864342411902525,
+      "improvement": -52.37863069722509,
+      "top_features": [
+        "ATR_pct",
+        "CAVB",
+        "VIX3M",
+        "VIX",
+        "US10Y",
+        "US10Y_ma22",
+        "VIX_lag5",
+        "CAVB_lag5",
+        "Credit_spread",
+        "RV_22d"
+      ]
+    },
+    "EEM": {
+      "n_baseline": 13,
+      "n_extended": 43,
+      "r2_baseline": 0.577700438677545,
+      "r2_extended": 0.46284908615044074,
+      "improvement": -19.88077987096887,
+      "top_features": [
+        "LQD",
+        "VIX3M",
+        "HYG",
+        "ATR_pct",
+        "CAVB",
+        "Ret_momentum",
+        "Ret_22d",
+        "US10Y",
+        "VIX",
+        "Credit_spread"
+      ]
+    }
+  },
+  "summary": {
+    "avg_baseline": 0.7066041573280089,
+    "avg_extended": 0.4664377239252384,
+    "improvement_pct": -33.988822583629954,
+    "most_important_features": {
+      "CAVB": 5,
+      "US10Y": 5,
+      "ATR_pct": 4,
+      "Ret_22d": 4,
+      "VIX3M": 4,
+      "Ret_momentum": 4,
+      "US10Y_ma22": 4,
+      "RV_22d": 3,
+      "LQD": 3,
+      "HYG": 3
+    }
+  },
+  "extended_data_sources": [
+    "VIX3M",
+    "SKEW",
+    "US10Y",
+    "DXY",
+    "HYG",
+    "LQD",
+    "OVX"
+  ]
+}

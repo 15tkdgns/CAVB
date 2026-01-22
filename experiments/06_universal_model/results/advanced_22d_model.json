@@ -1,0 +1,210 @@
+{
+  "experiment": "Exp18_Advanced_22Day_Model",
+  "description": "Literature-based long-horizon prediction approaches",
+  "models": [
+    "Mean_Reversion",
+    "VRP_Adjusted",
+    "HAR_Extended",
+    "SVR_RBF_Tuned",
+    "GB_Tuned",
+    "Ensemble_Specialist",
+    "QLIKE_Optimized"
+  ],
+  "results": {
+    "SPY": {
+      "model_results": {
+        "Mean_Reversion": {
+          "r2": -0.006151765164222445,
+          "qlike": 2.1979124372608876
+        },
+        "VRP_Adjusted": {
+          "r2": -0.18693868389836665,
+          "qlike": 2.2490328105887336
+        },
+        "HAR_Extended": {
+          "r2": -0.38484184424088186,
+          "qlike": 2.381657564048367
+        },
+        "SVR_RBF_Tuned": {
+          "r2": -0.7177949784223692,
+          "qlike": 3.2245797012249304
+        },
+        "GB_Tuned": {
+          "r2": -0.5791952027124241,
+          "qlike": 2.3119858290963755
+        },
+        "Ensemble_Specialist": {
+          "r2": -0.12081991592119401,
+          "qlike": 2.234486558871713
+        },
+        "QLIKE_Optimized": {
+          "r2": -0.22218771310266083,
+          "qlike": 2.333593992195585
+        }
+      },
+      "best_model": "Mean_Reversion",
+      "best_r2": -0.006151765164222445,
+      "n_features": 26
+    },
+    "GLD": {
+      "model_results": {
+        "Mean_Reversion": {
+          "r2": 0.14789472993026243,
+          "qlike": 6.417760126246047
+        },
+        "VRP_Adjusted": {
+          "r2": 0.6324159194123199,
+          "qlike": 0.08129392777724519
+        },
+        "HAR_Extended": {
+          "r2": 0.6314534446717743,
+          "qlike": -0.32430601517725904
+        },
+        "SVR_RBF_Tuned": {
+          "r2": 0.5277486943020495,
+          "qlike": -0.7610110336229018
+        },
+        "GB_Tuned": {
+          "r2": 0.6359940260174677,
+          "qlike": -0.22898315889170132
+        },
+        "Ensemble_Specialist": {
+          "r2": 0.5944603976283138,
+          "qlike": 0.17448933568753175
+        },
+        "QLIKE_Optimized": {
+          "r2": 0.5235947454901964,
+          "qlike": 1.5264791745314172
+        }
+      },
+      "best_model": "GB_Tuned",
+      "best_r2": 0.6359940260174677,
+      "n_features": 26
+    },
+    "TLT": {
+      "model_results": {
+        "Mean_Reversion": {
+          "r2": -0.14984509874703233,
+          "qlike": -0.12386181735091842
+        },
+        "VRP_Adjusted": {
+          "r2": 0.29683962528197616,
+          "qlike": -2.6691814648957037
+        },
+        "HAR_Extended": {
+          "r2": 0.3130994092365237,
+          "qlike": -6.324398989952045
+        },
+        "SVR_RBF_Tuned": {
+          "r2": -0.9381266977976408,
+          "qlike": -0.8357006335793516
+        },
+        "GB_Tuned": {
+          "r2": 0.19350092613208691,
+          "qlike": -3.6225595875339023
+        },
+        "Ensemble_Specialist": {
+          "r2": 0.3565987541875292,
+          "qlike": -2.8880113888368992
+        },
+        "QLIKE_Optimized": {
+          "r2": -1.246591442262685e+24,
+          "qlike": -2.004567925671515
+        }
+      },
+      "best_model": "Ensemble_Specialist",
+      "best_r2": 0.3565987541875292,
+      "n_features": 26
+    },
+    "EFA": {
+      "model_results": {
+        "Mean_Reversion": {
+          "r2": -0.08761019068507547,
+          "qlike": 2.4935710241790345
+        },
+        "VRP_Adjusted": {
+          "r2": 0.09552974336099584,
+          "qlike": 2.21927146830661
+        },
+        "HAR_Extended": {
+          "r2": -0.08355544186485253,
+          "qlike": 2.785667218576426
+        },
+        "SVR_RBF_Tuned": {
+          "r2": -0.2994301145192013,
+          "qlike": 2.811633519471921
+        },
+        "GB_Tuned": {
+          "r2": -0.12250577672714047,
+          "qlike": 2.3334689647364635
+        },
+        "Ensemble_Specialist": {
+          "r2": 0.10147832742534202,
+          "qlike": 2.2063940931994037
+        },
+        "QLIKE_Optimized": {
+          "r2": -0.048253350361653125,
+          "qlike": 2.442572150174927
+        }
+      },
+      "best_model": "Ensemble_Specialist",
+      "best_r2": 0.10147832742534202,
+      "n_features": 26
+    },
+    "EEM": {
+      "model_results": {
+        "Mean_Reversion": {
+          "r2": -0.7703368109452389,
+          "qlike": 14.815449316361786
+        },
+        "VRP_Adjusted": {
+          "r2": -0.09848871240434898,
+          "qlike": 0.6846921450045942
+        },
+        "HAR_Extended": {
+          "r2": -0.08192136769817426,
+          "qlike": 0.4400375960460556
+        },
+        "SVR_RBF_Tuned": {
+          "r2": -0.23155171269029018,
+          "qlike": -2.2091412362043603
+        },
+        "GB_Tuned": {
+          "r2": -1.5770597905274317,
+          "qlike": 1.4737467107061308
+        },
+        "Ensemble_Specialist": {
+          "r2": -0.16647139759708351,
+          "qlike": 4.114880974287167
+        },
+        "QLIKE_Optimized": {
+          "r2": 0.0801357077606395,
+          "qlike": 0.3196985701236208
+        }
+      },
+      "best_model": "QLIKE_Optimized",
+      "best_r2": 0.0801357077606395,
+      "n_features": 26
+    }
+  },
+  "summary": {
+    "model_averages": {
+      "Mean_Reversion": -0.17320982712226135,
+      "VRP_Adjusted": 0.14787157835051526,
+      "HAR_Extended": 0.07884684002087787,
+      "SVR_RBF_Tuned": -0.3318309618254904,
+      "GB_Tuned": -0.28985316356348834,
+      "Ensemble_Specialist": 0.1530492331445815,
+      "QLIKE_Optimized": -2.4931828845253703e+23
+    },
+    "best_universal": "Ensemble_Specialist",
+    "best_universal_r2": 0.1530492331445815,
+    "avg_best_r2": 0.23361101004535118
+  },
+  "literature_basis": [
+    "HAR model with quarterly extension (Corsi 2009)",
+    "Mean reversion for long horizon (GARCH literature)",
+    "VRP adjustment for implied volatility (Reading 2019)",
+    "QLIKE loss for volatility (Patton 2011)"
+  ]
+}

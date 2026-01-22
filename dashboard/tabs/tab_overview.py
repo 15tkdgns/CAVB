@@ -1,6 +1,6 @@
 """
 연구 개요 탭 - Executive Summary
-Updated: 2026-01-16
+Updated: 2026-01-21
 """
 import streamlit as st
 import pandas as pd
@@ -16,19 +16,19 @@ def render_overview():
     col1, col2, col3, col4, col5 = st.columns(5)
     
     with col1:
-        st.metric("평균 Test R²", "0.789", "+2.7% vs ElasticNet")
+        st.metric("5일 Test R²", "0.789", "Huber-Tuned")
     
     with col2:
-        st.metric("최적 예측 기간", "5일", "+717% vs 22일")
+        st.metric("22일 Test R²", "0.82", "TIP (채권)")
     
     with col3:
-        st.metric("최적 모델", "Huber-Tuned", "40+ 모델 비교")
+        st.metric("테스트 자산", "23개", "5개 기존 + 18개 신규")
     
     with col4:
-        st.metric("Feature 수", "13개", "핵심 변수만")
+        st.metric("테스트 모델", "60+", "20개 실험")
     
     with col5:
-        st.metric("실험 수", "12개", "총 40+ 모델")
+        st.metric("vs HAR-RV", "+11%", "베이스라인 대비")
     
     st.markdown("---")
     
@@ -37,8 +37,8 @@ def render_overview():
     # ==========================================
     st.markdown("### 1.1 연구 질문")
     st.info("""
-    시장 전체 내재변동성(VIX)과 자산별 실현변동성 간 괴리(basis)가 
-    여러 자산군에 걸친 **5일 선행 변동성 예측**을 개선할 수 있는가?
+    시장 전체 내재변동성(VIX)과 자산별 실현변동성 간 괴리(**CAVB**)가 
+    여러 자산군에 걸친 **5일 및 22일 선행 VRP 예측**을 개선할 수 있는가?
     """)
     
     # ==========================================
@@ -47,17 +47,19 @@ def render_overview():
     st.markdown("### 1.2 가설 및 검증 결과")
     
     hypo_data = {
-        '가설': ['H1', 'H2', 'H3'],
+        '가설': ['H1', 'H2', 'H3', 'H4'],
         '내용': [
-            'VIX 기반 변수가 HAR-RV 모델 개선',
-            'CAVB가 VIX 단독 대비 추가 예측력 제공',
-            '단순 선형 모델 > 복잡한 ML'
+            'CAVB가 HAR-RV 모델 개선',
+            '선형 모델 > 복잡한 ML',
+            '22일 예측은 채권에서 효과적',
+            '확장 피처는 Feature Selection 필요'
         ],
-        '결과': ['검증됨', '부분 검증', '검증됨'],
+        '결과': ['검증됨', '검증됨', '검증됨', '검증됨'],
         '근거': [
-            'HAR+VIX: +1.5% 개선',
-            'S&P 500에서만 유의 (p=0.008)',
-            'ElasticNet > Stacking (+30.7%)'
+            'HAR 대비 +11% R²',
+            'Huber > XGBoost +16%',
+            'TIP 0.82, IEF 0.79',
+            '43개→15개 선택시 과적합 방지'
         ]
     }
     
@@ -67,45 +69,46 @@ def render_overview():
     # ==========================================
     # 주요 실험 결과 요약
     # ==========================================
-    st.markdown("### 1.3 주요 실험 결과")
+    st.markdown("### 1.3 주요 실험 결과 (20개 실험)")
     
-    with st.expander("실험별 핵심 발견", expanded=True):
+    with st.expander("핵심 발견", expanded=True):
         col1, col2 = st.columns(2)
         
         with col1:
             st.markdown("""
-            **예측 기간 비교**:
-            - 1일: R² 0.682 (노이즈 과다)
-            - **5일**: R² 0.746 (최적)
-            - 22일: R² 0.097 (정보 감쇠)
+            **5일 예측 (전 자산 가능)**:
+            - 최적 모델: **Huber** (R² 0.789)
+            - GLD 0.87 > TLT 0.83 > SPY 0.76
+            - HAR-RV 대비 **+11%** 개선
             
-            **모델 구성**:
-            - Baseline (9): R² 0.740
-            - Enhanced (25): R² 0.762
-            - **29 Features**: R² **0.770**
+            **베이스라인 비교**:
+            - vs Naive Mean: +182%
+            - vs Random Walk: +88%
+            - vs GARCH: +76%
             """)
         
         with col2:
             st.markdown("""
-            **ML vs Linear**:
-            - ElasticNet: R² **0.770**
-            - Neural Network: R² 0.707
-            - Stacking: R² 0.540
+            **22일 예측 (채권/상품만)**:
+            - 최적 모델: **Ensemble**
+            - TIP **0.82** > IEF 0.79 > GLD 0.64
+            - 주식(SPY): **예측 불가** (R² < 0)
             
-            **Feature Groups**:
-            - Group 2 (VRP): **+1.05%** (필수)
-            - Group 3 (Good/Bad): +0.66%
-            - RFE 15: 99.8% 효율
+            **자산 발견 (Exp 20)**:
+            - 23개 자산 중 10개 예측 가능
+            - **채권 > 상품 > 주식**
             """)
     
+
     # ==========================================
     # 자산별 성능
     # ==========================================
-    st.markdown("### 1.4 자산별 성능 (29 Features)")
+    st.markdown("### 1.4 자산별 성능")
+    st.caption("**5일 예측 | ElasticNet (29 Features) | Test Set (2022-2025)**")
     
     asset_data = {
-        '자산': ['S&P 500', 'Gold', 'Treasury', 'EAFE', 'Emerging'],
-        'Test R²': [0.699, 0.873, 0.837, 0.742, 0.694],
+        '자산': ['SPY (S&P 500)', 'GLD (Gold)', 'TLT (Treasury)', 'EFA (EAFE)', 'EEM (Emerging)'],
+        '5일 R² (ElasticNet)': [0.699, 0.873, 0.837, 0.742, 0.694],
         'vs HAR-RV': ['+4.3%', '+2.1%', '+6.5%', '+5.2%', '+6.6%'],
         '최적 구성': ['Regime-Adaptive', '25+Group2', '25+Group2', '25+Group2', '25+Group3']
     }

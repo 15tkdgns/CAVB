@@ -1,0 +1,23 @@
+{
+  "experiment": "Exp19_22Day_Optuna_Tuning",
+  "n_trials": 50,
+  "best_params": {
+    "model_type": "ridge",
+    "ridge_alpha": 935.4999034746961
+  },
+  "best_val_r2": 0.1440093103818649,
+  "test_results": {
+    "SPY": -0.3159348289947632,
+    "GLD": 0.6602047086756249,
+    "TLT": 0.38130896992289365,
+    "EFA": 0.0045590288998506034,
+    "EEM": -0.1587224378743366
+  },
+  "avg_test_r2": 0.11428308812585386,
+  "positive_assets": 3,
+  "comparison": {
+    "exp17_baseline": -0.135,
+    "exp18_literature": 0.153,
+    "exp19_tuned": 0.11428308812585386
+  }
+}

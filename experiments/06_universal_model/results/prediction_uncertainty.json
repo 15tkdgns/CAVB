@@ -1,0 +1,70 @@
+{
+  "experiment": "Exp14_Prediction_Uncertainty",
+  "methodology": "Bootstrap resampling (100 samples)",
+  "reference": "Allen et al. (2024)",
+  "n_bootstrap": 100,
+  "results": {
+    "SPY": {
+      "r2_baseline": 0.7568081189732146,
+      "avg_ci_width": 0.4281076658273555,
+      "uncertainty_error_corr": 0.18336958519313037,
+      "coverage_95": 0.1227364185110664,
+      "r2_high_vix": 0.7957713366072812,
+      "r2_low_vix": 0.553374021422332,
+      "ci_high_vix": 0.5030958990298096,
+      "ci_low_vix": 0.3534205901879635
+    },
+    "GLD": {
+      "r2_baseline": 0.8672571207300133,
+      "avg_ci_width": 0.3743115066247449,
+      "uncertainty_error_corr": 0.059708879980189374,
+      "coverage_95": 0.10865191146881288,
+      "r2_high_vix": 0.7481769838757666,
+      "r2_low_vix": 0.8844159007888163,
+      "ci_high_vix": 0.39748977091121646,
+      "ci_low_vix": 0.351226327737014
+    },
+    "TLT": {
+      "r2_baseline": 0.8274127723689919,
+      "avg_ci_width": 0.4037969390158973,
+      "uncertainty_error_corr": 0.00717791512660839,
+      "coverage_95": 0.1227364185110664,
+      "r2_high_vix": 0.8040004553190695,
+      "r2_low_vix": 0.7679309034996521,
+      "ci_high_vix": 0.4557578405426617,
+      "ci_low_vix": 0.35204471580851754
+    },
+    "EFA": {
+      "r2_baseline": 0.7771011133823037,
+      "avg_ci_width": 0.4011500072988511,
+      "uncertainty_error_corr": 0.22776927936497704,
+      "coverage_95": 0.08853118712273642,
+      "r2_high_vix": 0.6966682499627139,
+      "r2_low_vix": 0.545448080806106,
+      "ci_high_vix": 0.46673140217798015,
+      "ci_low_vix": 0.33583199151562226
+    },
+    "EEM": {
+      "r2_baseline": 0.7182256884635456,
+      "avg_ci_width": 0.47953275373081344,
+      "uncertainty_error_corr": 0.07286826465914543,
+      "coverage_95": 0.10261569416498995,
+      "r2_high_vix": 0.713955771230352,
+      "r2_low_vix": 0.44574270498881485,
+      "ci_high_vix": 0.5570908390349156,
+      "ci_low_vix": 0.4022861466809446
+    }
+  },
+  "summary": {
+    "avg_r2": 0.7893609627836138,
+    "avg_ci_width": 0.41737977449953245,
+    "avg_uncertainty_error_corr": 0.11017878486481011,
+    "avg_coverage": 0.10905432595573442,
+    "regime_analysis": {
+      "high_vix_r2": 0.7517145593990366,
+      "low_vix_r2": 0.6393823223011443,
+      "high_vix_ci": 0.4760331503393166,
+      "low_vix_ci": 0.3589619543860124
+    }
+  }
+}

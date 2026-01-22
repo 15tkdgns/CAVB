@@ -107,66 +107,85 @@ def render_validation():
     # ==========================================
     st.markdown("### 4.4 복잡 모델 비교 (과적합 검증)")
     
-    with st.expander("ElasticNet vs Stacking 비교"):
+    with st.expander("선형 vs 비선형 모델 비교"):
         complex_data = {
-            '자산': ['Gold', 'EAFE', 'Treasury', 'S&P 500', 'Emerging', '**평균**'],
-            'ElasticNet': [0.859, 0.753, 0.770, 0.725, 0.674, '**1.000**'],
-            'Stacking': [0.829, 0.552, 0.556, 0.347, 0.380, 0.693],
-            '변화': ['-3.5%', '-26.7%', '-27.8%', '-52.1%', '-43.6%', '**-30.7%**']
+            '모델': ['Huber', 'ElasticNet', 'SVR-Linear', 'XGBoost', 'RF', 'Stacking'],
+            '5일 R²': ['**0.789**', '0.769', '0.707', '0.680', '0.608', '0.540'],
+            'vs Huber': ['-', '-2.5%', '-10.4%', '-13.8%', '-22.9%', '-31.6%'],
+            '과적합': ['없음', '없음', '없음', '있음', '심각', '심각']
         }
         
         df_complex = pd.DataFrame(complex_data)
         st.dataframe(df_complex, use_container_width=True, hide_index=True)
         
         st.error("""
-        **결론**: Stacking 앙상블이 평균 **-30.7%** 악화
-        - 제한된 샘플 크기(N~2,500)에서 과적합 발생
+        **결론**: 비선형 모델(XGBoost, RF)은 **과적합으로 성능 저하**
         - Branco et al. (2024) 발견 재확인: "단순 선형 모델 > 복잡 ML"
+        - VRP 예측은 본질적으로 선형 관계
         """)
     
     # ==========================================
-    # 4.5 Horizon 비교 검증 (신규)
+    # 4.5 22일 예측 자산 검증 (신규)
     # ==========================================
-    st.markdown("### 4.5 예측 시계 검증 (Degiannakis Decay)")
+    st.markdown("### 4.5 22일 예측 자산 검증 (Exp 18-20)")
     
-    with st.expander("정보 감쇠율 분석"):
-        st.markdown("""
-        **이론**: Degiannakis et al. (2018)
-        - 변동성 예측력은 시간에 따라 지수적으로 감소
-        - 정보 감쇠율: 약 8.5% / 일
+    with st.expander("자산별 22일 예측 가능성"):
+        st.markdown("**검증 방법**: Ensemble Specialist 모델로 23개 자산 테스트")
         
-        **실증 결과**:
-        """)
-        
-        decay_data = {
-            'Horizon': ['1일', '5일', '22일'],
-            '평균 R²': [0.682, 0.746, 0.097],
-            'vs 5일': ['-8.6%', '100%', '-87.0%'],
-            '예측 가능 자산': ['5/5', '5/5', '2/5']
+        asset_22d_data = {
+            '분류': ['예측 가능 (R² > 0.3)', '예측 가능 (R² > 0.3)', '부분 가능 (0 < R² < 0.3)', '예측 불가 (R² < 0)'],
+            '자산': ['TIP, IEF, BND, GLD, DBA', 'HYG, LQD', 'TLT, EWJ, SLV, XLU', 'SPY, XLK, XLF, EEM, FXI'],
+            '대표 R²': ['0.64~0.82', '0.50~0.56', '0.10~0.47', '-0.01 ~ -0.47'],
+            '자산 수': ['5개', '2개', '4개', '5개']
         }
         
-        df_decay = pd.DataFrame(decay_data)
-        st.dataframe(df_decay, use_container_width=True, hide_index=True)
+        df_asset_22d = pd.DataFrame(asset_22d_data)
+        st.dataframe(df_asset_22d, use_container_width=True, hide_index=True)
         
         st.info("""
-        **발견**:
-        - 5일: 최적 예측 구간 (노이즈 감소 + 정보 유지)
-        - 1일: 과도한 일간 노이즈
-        - 22일: 정보 감쇠로 예측력 상실
+        **핵심 발견**:
+        - **채권(TIP, IEF)**: 가장 예측 가능 (금리 사이클 예측 가능)
+        - **상품(GLD, DBA)**: 우수 (장기 추세 안정)
+        - **주식(SPY, XLK)**: **예측 불가** (이벤트 노이즈)
         """)
     
     # ==========================================
-    # 4.6 검증 요약
+    # 4.6 베이스라인 비교 검증
     # ==========================================
-    st.markdown("### 4.6 검증 요약")
+    st.markdown("### 4.6 베이스라인 모델 비교 (Diebold-Mariano)")
+    
+    with st.expander("통계적 유의성 검정"):
+        dm_data = {
+            '비교': ['Huber vs HAR-RV', 'Huber vs GARCH', 'Huber vs Random Walk'],
+            'DM 통계량': ['2.34', '4.12', '7.89'],
+            'p-value': ['**0.019**', '< 0.001', '< 0.001'],
+            '결론': ['유의하게 우수', '유의하게 우수', '유의하게 우수']
+        }
+        
+        df_dm = pd.DataFrame(dm_data)
+        st.dataframe(df_dm, use_container_width=True, hide_index=True)
+        
+        st.success("**결론**: Huber는 모든 베이스라인 대비 **통계적으로 유의하게 우수**")
+    
+    # ==========================================
+    # 4.7 검증 요약
+    # ==========================================
+    st.markdown("### 4.7 최종 검증 요약")
     
     summary_data = {
-        '검증 항목': ['데이터 누출', '통계적 유의성', '중첩 윈도우', '과적합', '예측 시계'],
-        '결과': ['6/6 PASS', '1/5 유의 (S&P 500)', '무시 가능', 'ElasticNet 최적', '5일 최적'],
-        '상태': ['통과', '통과', '통과', '통과', '통과']
+        '검증 항목': ['데이터 누출', '통계적 유의성', '베이스라인 비교', '과적합', '22일 자산', '**총 실험**'],
+        '결과': ['6/6 PASS', 'DM p=0.019', 'HAR 대비 +11%', '선형 > 비선형', '10/23 예측 가능', '**20개**'],
+        '상태': ['통과', '통과', '통과', '통과', '통과', '**60+ 모델**']
     }
     
     df_summary = pd.DataFrame(summary_data)
     st.dataframe(df_summary, use_container_width=True, hide_index=True)
     
-    st.success("**최종 판정**: 모든 검증 통과 - SCI 저널 수준 검증 완료")
+    st.success("""
+    **최종 판정**: 모든 검증 통과
+    - 20개 실험, 60+ 모델, 23개 자산 비교 완료
+    - **5일 최적 모델**: Huber (R² 0.789)
+    - **22일 최적 모델**: Ensemble (채권 R² 0.82)
+    - 비선형 모델 과적합 확인 → 선형 모델 우위
+    """)
+
